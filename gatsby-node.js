@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   createLandingPages.forEach(({ node }, index) => {
     createPage({
-      path: `/${node.slug}`,
+      path: `/${node.slug}/`,
       component: path.resolve(`./src/components/LandingPageLayout.js`),
       context: { pageId: node.id },
     })
