@@ -5,11 +5,27 @@ slug: template
 # Set this to true when you want to publish the page
 published: false
 
-# company/partner logo. 320x128px box
-partnerLogo: ./../images/companyLogos/templateLogo.png
+# Partner logo in SVG format, please just add the naem not the ".svg" file extension
+# Add the logo to the "companyLogos" folder
+partnerLogo: "templateLogo"
+partnerLogoCard: "templateLogoCard"
 
 # This color will be used for buttons and colord titles
-themeColor: "#00A3D7"
+themeColor: "#F200F6"
+
+# Color used as background in dark sections
+darkBgColor: "#333"
+
+# Card colors
+card: { backgroundColor: "#0A213B", fontColor: "#fff" }
+
+fontColor:
+  {
+    heading: "#0C2542",
+    inverseHeading: "#fff",
+    body: "#1C3654",
+    inverseBody: "#C6C6C6",
+  }
 
 # Content
 first:

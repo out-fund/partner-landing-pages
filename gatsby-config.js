@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-svgr",
     "gatsby-transformer-yaml",
     {
       resolve: `gatsby-source-filesystem`,
