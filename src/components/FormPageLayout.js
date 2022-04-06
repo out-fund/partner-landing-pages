@@ -47,7 +47,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
             <div className="form">
               <form
-                action="https://app.out.fund/enquire"
                 name="partner"
                 method="post"
                 data-netlify="true"
