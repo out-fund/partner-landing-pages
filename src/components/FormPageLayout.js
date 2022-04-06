@@ -2,8 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import { navigate } from "gatsby-link"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
-// import parse from "html-react-parser"
 
 import {
   FormControl,
@@ -22,6 +20,8 @@ function encode(data) {
 
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
   const [state, setState] = React.useState({})
+  const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
+
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
@@ -57,11 +57,13 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
         ...state,
       }),
     })
-      .then(() => navigate(navigateToUrl))
+      .then(() =>
+        navigate("/thank-you/", {
+          state: { navigateToUrl, themeColor, fontColor },
+        })
+      )
       .catch((error) => alert(error))
   }
-
-  const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
