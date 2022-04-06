@@ -1,23 +1,39 @@
 import React from "react"
 import styled from "styled-components"
 
-// markup
 const ThankYou = ({ location }) => {
-  if (location.state.themeColor) {
-    location.state.fontColor.heading = "#000"
-    location.state.fontColor.button = "#fff"
-    location.state.themeColor = "#00A3D7"
+  let vars = {}
+  // if (location.state.themeColor) {
+  if (typeof window === "undefined") {
+    vars = {
+      url: "test",
+      fontColor: {
+        heading: "#000",
+        button: "#fff",
+      },
+      themeColor: "#00A3D7",
+    }
+  } else {
+    vars = {
+      url: location.state.navigateToUrl,
+      fontColor: {
+        heading: location.state.fontColor.heading,
+        button: location.state.fontColor.button,
+      },
+      themeColor: location.state.themeColor,
+    }
   }
+
   return (
     <Main>
-      <h1 style={{ color: location.state.fontColor.heading }}>
+      <h1 style={{ color: vars.fontColor.heading }}>
         Thank you for your application
       </h1>
       <Button
-        href={location.state.navigateToUrl}
+        href={vars.url}
         style={{
-          color: location.state.fontColor.button,
-          backgroundColor: location.state.themeColor,
+          color: vars.fontColor.button,
+          backgroundColor: vars.themeColor,
         }}
       >
         Proceed

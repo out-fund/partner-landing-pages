@@ -47,6 +47,9 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
         break
       case "Other":
         navigateToUrl = "https://app.out.fund/enquire"
+        break
+      default:
+        navigateToUrl = "https://app.out.fund/enquire"
     }
 
     fetch("/", {
