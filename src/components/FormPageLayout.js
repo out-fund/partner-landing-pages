@@ -54,7 +54,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               >
                 <input type="hidden" name="form-name" value="partner" />
                 <Stack spacing={6}>
-                  <Split>
+                  <div className="split">
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
                       <Input id="first-name" name="first-name" />
@@ -63,7 +63,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       <FormLabel htmlFor="last-name">Last name</FormLabel>
                       <Input id="last-name" name="last-name" />
                     </FormControl>
-                  </Split>
+                  </div>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-email">Company Email</FormLabel>
                     <Input
@@ -102,7 +102,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       name="business-type"
                     >
                       <option value="eCommerce">eCommerce</option>
-                      <option value="MobileApp">Spain</option>
+                      <option value="MobileApp">Mobile App</option>
                       <option value="SaaS">SaaS</option>
                       <option value="Other">Other</option>
                     </Select>
@@ -142,12 +142,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
 export default FormPageLayout
 
-const Split = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-`
-
 const Container = styled.div`
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -183,6 +177,11 @@ const Container = styled.div`
     font-size: 16px;
     font-weight: 600;
     padding-top: 24px;
+  }
+  .split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
   input,
   select {
