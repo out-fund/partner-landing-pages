@@ -44,6 +44,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                 name="partner-landing-page"
                 method="POST"
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
               >
                 <Stack spacing={6}>
                   <Split>
@@ -52,6 +53,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       name="form-name"
                       value="partner-landing-page"
                     />
+                    <p className="hidden">
+                      <label>
+                        Don’t fill this out if you’re human:{" "}
+                        <input name="bot-field" />
+                      </label>
+                    </p>
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
                       <Input id="first-name" />
@@ -134,6 +141,15 @@ const Container = styled.div`
   padding-bottom: 100px;
   background-color: #fafafa;
   min-height: 100vh;
+  .hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
   h1 {
     font-size: 24px;
     font-weight: 600;
