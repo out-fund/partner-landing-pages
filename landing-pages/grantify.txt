@@ -1,5 +1,0 @@
-slug: grantify
-title: Affordable Growth Capital For Your Online Businesses
-description: As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Grantify Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £2M.
-image: ./../images/card.png
-buttonColor: "#faf"
