@@ -3,7 +3,11 @@ import styled from "styled-components"
 
 // markup
 const ThankYou = ({ location }) => {
-  console.log(location.state)
+  if (location.state.themeColor) {
+    location.state.fontColor.heading = "#000"
+    location.state.fontColor.button = "#fff"
+    location.state.themeColor = "#00A3D7"
+  }
   return (
     <Main>
       <h1 style={{ color: location.state.fontColor.heading }}>
