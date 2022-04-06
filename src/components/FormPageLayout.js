@@ -85,7 +85,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                     <Input id="company-website" name="company-website" />
                   </FormControl>
                   <FormControl isRequired>
-                    <FormLabel htmlFor="coununtry">
+                    <FormLabel htmlFor="country">
                       Incorporation Country
                     </FormLabel>
                     <Select placeholder="Select" id="country" name="country">
