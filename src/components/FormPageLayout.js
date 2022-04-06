@@ -41,18 +41,14 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
             <div className="form">
               <form
                 action="https://app.out.fund/enquire"
-                name="partner-landing-page"
+                name="partner"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
                 <Stack spacing={6}>
                   <Split>
-                    <input
-                      type="hidden"
-                      name="form-name"
-                      value="partner-landing-page"
-                    />
+                    <input type="hidden" name="form-name" value="partner" />
                     <p className="hidden">
                       <label>
                         Don’t fill this out if you’re human:{" "}
