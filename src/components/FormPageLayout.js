@@ -42,7 +42,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <form
                 action="https://app.out.fund/enquire"
                 name="partner-landing-page"
-                method="POST"
+                method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
@@ -56,7 +56,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                     <p className="hidden">
                       <label>
                         Don’t fill this out if you’re human:{" "}
-                        <input name="bot-field" />
+                        <input name="bot-field" tabIndex="-1" />
                       </label>
                     </p>
                     <FormControl isRequired>
@@ -115,6 +115,10 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       <option value="500000">More than $500k</option>
                     </Select>
                   </FormControl>
+                  <div className="instructions">
+                    Click below to continue your application with our partner
+                    Outfund
+                  </div>
                   <Button type="submit">Get started</Button>
                 </Stack>
               </form>
@@ -164,6 +168,11 @@ const Container = styled.div`
       /* margin: 0 auto; */
       /* width: 100%; */
     }
+  }
+  .instructions {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 24px;
   }
   input,
   select {
