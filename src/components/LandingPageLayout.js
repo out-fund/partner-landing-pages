@@ -1239,11 +1239,6 @@ export const query = graphql`
         button
         description
         title
-        image {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
       third {
         title
@@ -1251,11 +1246,6 @@ export const query = graphql`
         steps {
           description
           title
-          image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
         }
       }
       slug

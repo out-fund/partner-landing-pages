@@ -36,7 +36,6 @@ first:
     description: "As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Grantify Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £2M.",
 
     button: "Get funded",
-    image: ./../images/card.png,
   }
 second:
   [
@@ -57,17 +56,14 @@ third:
         {
           title: "Apply for funding",
           description: "We analyse your data to make you a tailored offer within 48 hours.",
-          image: ./../images/steps/step-1.png,
         },
         {
           title: "Select an offer",
           description: "100% of your funds are available to use after selecting an offer.",
-          image: ./../images/steps/step-2.png,
         },
         {
           title: "Repay on your terms",
           description: "Repay your balance with a small share of your new sales.",
-          image: ./../images/steps/step-3.png,
         },
       ],
   }
@@ -77,7 +73,6 @@ fourth:
     title: "Repay On Your Terms",
     description: "Repayments are automatically made from a pre-agreed percentage of your revenue, so you can focus 100% on your business.",
     button: "Get funded",
-    image: ./../images/steps/step-3.png,
   }
 
 fifth:
