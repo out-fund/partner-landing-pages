@@ -47,6 +47,11 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               >
                 <Stack spacing={6}>
                   <Split>
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="partner-landing-page"
+                    />
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
                       <Input id="first-name" />
