@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react"
 
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
-  const { themeColor, partnerLogo, fontColor } = landingPagesYaml
+  const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
@@ -41,6 +41,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
             <div className="form">
               <form
+                action="https://app.out.fund/enquire"
                 name="partner"
                 method="post"
                 data-netlify="true"
@@ -49,6 +50,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                 <Stack spacing={6}>
                   <Split>
                     <input type="hidden" name="form-name" value="partner" />
+                    <input type="hidden" name="partner-name" value={slug} />
                     <p className="hidden">
                       <label>
                         Don’t fill this out if you’re human:{" "}
