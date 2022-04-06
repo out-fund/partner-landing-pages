@@ -49,6 +49,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <form
                 name="partner"
                 method="post"
+                action="/thank-you/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
