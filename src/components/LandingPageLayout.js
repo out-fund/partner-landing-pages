@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 
 const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
@@ -31,8 +31,6 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     inverseBody: fontColor.inverseBody,
     darkBgColor: darkBgColor,
   }
-
-  console.log(theme.heading)
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
@@ -918,15 +916,18 @@ const Container = styled.div`
     font-size: 3rem;
     font-weight: 800;
     color: ${(props) => props.theme.heading};
+    line-height: 1.2;
   }
   h2 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 8px;
     color: ${(props) => props.theme.heading};
+    line-height: 1.2;
   }
   h3 {
     color: ${(props) => props.theme.heading};
+    line-height: 1.2;
   }
   p {
     line-height: 1.5;

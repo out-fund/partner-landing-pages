@@ -4,8 +4,20 @@ import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 // import parse from "html-react-parser"
 
+import {
+  FormControl,
+  FormLabel,
+  Input,
+  Stack,
+  Select,
+  // Button,
+} from "@chakra-ui/react"
+
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
-  const { themeColor } = landingPagesYaml
+  const { themeColor, partnerLogo } = landingPagesYaml
+
+  const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
+  const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
 
   const theme = {
     primary: themeColor,
@@ -17,8 +29,76 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
       <Container>
         <ThemeProvider theme={theme}>
           <Wrapper>
-            <h1>Form</h1>
-            <Button href="#">Test</Button>
+            <div className="header">
+              <div className="logo">
+                <PartnerLogo />
+              </div>
+              <h1>Tell us about you and your company</h1>
+            </div>
+            <div className="form">
+              <form action="">
+                <Stack spacing={6}>
+                  <Split>
+                    <FormControl isRequired>
+                      <FormLabel htmlFor="first-name">First name</FormLabel>
+                      <Input id="first-name" />
+                    </FormControl>
+                    <FormControl isRequired>
+                      <FormLabel htmlFor="last-name">Last name</FormLabel>
+                      <Input id="last-name" />
+                    </FormControl>
+                  </Split>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="company-email">Company Email</FormLabel>
+                    <Input id="company-email" type="email" />
+                  </FormControl>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="phone-number">Phone number</FormLabel>
+                    <Input type="tel" id="phone-number" />
+                  </FormControl>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="company-website">
+                      Company website
+                    </FormLabel>
+                    <Input id="company-website" />
+                  </FormControl>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="coununtry">
+                      Incorporation Country
+                    </FormLabel>
+                    <Select placeholder="Select" id="country">
+                      <option value="Australia">Australia</option>
+                      <option value="Spain">Spain</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="US">United States</option>
+                      <option value="Other">Other</option>
+                    </Select>
+                  </FormControl>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="business-type">Business Type</FormLabel>
+                    <Select placeholder="Select" id="business-type">
+                      <option value="eCommerce">eCommerce</option>
+                      <option value="MobileApp">Spain</option>
+                      <option value="SaaS">SaaS</option>
+                      <option value="Other">Other</option>
+                    </Select>
+                  </FormControl>
+                  <FormControl isRequired>
+                    <FormLabel htmlFor="business-type">
+                      Average Monthly Revenue
+                    </FormLabel>
+                    <Select placeholder="Select" id="amr">
+                      <option value="0">Less than $10K</option>
+                      <option value="10000">$10k - $50k</option>
+                      <option value="50000">$50k - $100k</option>
+                      <option value="100000">$100k - $500k</option>
+                      <option value="500000">More than $500k</option>
+                    </Select>
+                  </FormControl>
+                  <Button>Get started</Button>
+                </Stack>
+              </form>
+            </div>
           </Wrapper>
         </ThemeProvider>
       </Container>
@@ -28,29 +108,50 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
 export default FormPageLayout
 
+const Split = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+`
+
 const Container = styled.div`
   font-family: "Inter", sans-serif;
   font-size: 16px;
   letter-spacing: 0.01em;
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .header {
+    .logo {
+      text-align: center;
+      margin: 48px 0;
+    }
+  }
 `
 const Wrapper = styled.div.attrs(() => ({
   className: "wrapper",
 }))`
-  max-width: 970px;
+  max-width: 570px;
   margin: 0 auto;
+  padding: 0 16px;
 `
 
-const Button = styled.a`
+const Button = styled.button`
+  cursor: pointer;
   display: inline-block;
   text-decoration: none;
   color: white;
   font-weight: 600;
-  padding: 8px 24px;
+  padding: 12px 24px;
   line-height: 24px;
   margin: 0;
   border: none;
   background-color: ${(props) => props.theme.primary};
   border-radius: 100px;
+  font-size: 16px;
 `
 
 // const Navbar = styled.nav`
@@ -125,6 +226,7 @@ export const query = graphql`
       slug
       published
       themeColor
+      partnerLogo
     }
   }
 `
