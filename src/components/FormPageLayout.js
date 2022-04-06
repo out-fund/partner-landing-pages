@@ -49,14 +49,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               >
                 <Stack spacing={6}>
                   <Split>
-                    <input type="hidden" name="form-name" value="partner" />
-                    <input type="hidden" name="partner-name" value={slug} />
-                    <p className="hidden">
-                      <label>
-                        Don’t fill this out if you’re human:{" "}
-                        <input name="bot-field" tabIndex="-1" />
-                      </label>
-                    </p>
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
                       <Input id="first-name" name="first-name" />
@@ -66,6 +58,14 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       <Input id="last-name" name="last-name" />
                     </FormControl>
                   </Split>
+                  <input type="hidden" name="form-name" value="partner" />
+                  <input type="hidden" name="partner-name" value={slug} />
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human:{" "}
+                      <input name="bot-field" tabIndex="-1" />
+                    </label>
+                  </p>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-email">Company Email</FormLabel>
                     <Input
