@@ -25,11 +25,13 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
+  let navigateToUrl = ""
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // console.log(state)
-    let navigateToUrl = ""
+
+    const form = e.target
+
     switch (state.country) {
       case "UK":
         navigateToUrl = "https://app.out.fund/enquire"
@@ -47,7 +49,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
         navigateToUrl = "https://app.out.fund/enquire"
     }
 
-    const form = e.target
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
