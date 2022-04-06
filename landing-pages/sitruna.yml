@@ -1,39 +1,43 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: template
+slug: sitruna
 
 # Set this to true when you want to publish the page
-published: false
+published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "templateLogo"
-partnerLogoCard: "templateLogoCard"
+partnerLogo: "sitruna"
+partnerLogoCard: "sitruna-card"
 
 # This color will be used for buttons and colord titles
-themeColor: "#F200F6"
+themeColor: "#FED357"
 
 # Color used as background in dark sections
-darkBgColor: "#333"
+darkBgColor: "#000"
 
 # Card colors
-card: { backgroundColor: "#0A213B", fontColor: "#fff" }
+card: { backgroundColor: "#000", fontColor: "#fff" }
 
 fontColor:
   {
-    heading: "#0C2542",
+    heading: "#000",
     inverseHeading: "#fff",
-    body: "#1C3654",
+    body: "#222",
     inverseBody: "#C6C6C6",
-    button: "#fff",
+    button: "#000",
   }
 
 # Content
 first:
   {
-    title: { firstLine: "First line", secondLine: "Second line" },
+    title:
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For Amazon Businesses",
+      },
 
-    description: "As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Grantify Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £2M.",
+    description: "As Amazon experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Sitruna Finance offers a new way to help you fund your Amazon brand with funding from £10K to £2M.",
 
     button: "Get funded",
     image: ./../images/card.png,

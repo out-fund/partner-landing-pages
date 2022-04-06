@@ -14,13 +14,16 @@ import {
 } from "@chakra-ui/react"
 
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
-  const { themeColor, partnerLogo } = landingPagesYaml
+  const { themeColor, partnerLogo, fontColor } = landingPagesYaml
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
 
   const theme = {
     primary: themeColor,
+    heading: fontColor.heading,
+    body: fontColor.body,
+    buttonFontColor: fontColor.button,
   }
 
   return (
@@ -36,7 +39,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <h1>Tell us about you and your company</h1>
             </div>
             <div className="form">
-              <form action="">
+              <form
+                action="https://app.out.fund/enquire"
+                name="partner-landing-page"
+                method="POST"
+                data-netlify="true"
+              >
                 <Stack spacing={6}>
                   <Split>
                     <FormControl isRequired>
@@ -95,7 +103,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       <option value="500000">More than $500k</option>
                     </Select>
                   </FormControl>
-                  <Button>Get started</Button>
+                  <Button type="submit">Get started</Button>
                 </Stack>
               </form>
             </div>
@@ -131,6 +139,9 @@ const Container = styled.div`
     .logo {
       text-align: center;
       padding: 48px 0;
+      /* height: 32px; */
+      /* margin: 0 auto; */
+      /* width: 100%; */
     }
   }
   input,
@@ -150,7 +161,7 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: ${(props) => props.theme.buttonFontColor};
   font-weight: 600;
   padding: 12px 24px;
   line-height: 24px;
@@ -235,6 +246,11 @@ export const query = graphql`
       published
       themeColor
       partnerLogo
+      fontColor {
+        heading
+        body
+        button
+      }
     }
   }
 `

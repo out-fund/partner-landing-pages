@@ -30,6 +30,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     body: fontColor.body,
     inverseBody: fontColor.inverseBody,
     darkBgColor: darkBgColor,
+    buttonFontColor: fontColor.button,
   }
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
@@ -940,12 +941,13 @@ const Wrapper = styled.div.attrs(() => ({
 }))`
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 16px;
 `
 
 const Button = styled.a`
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: ${(props) => props.theme.buttonFontColor};
   font-weight: 600;
   padding: 8px 24px;
   line-height: 24px;
@@ -958,8 +960,10 @@ const Button = styled.a`
 const Navbar = styled.nav`
   margin-top: 32px;
   .logo {
-    width: 160px;
-    height: 64px;
+    /* width: 160px; */
+    /* height: 64px; */
+    height: 32px;
+    /* width: 100%; */
   }
 `
 
@@ -1211,6 +1215,7 @@ export const query = graphql`
         inverseHeading
         body
         inverseBody
+        button
       }
       card {
         backgroundColor
