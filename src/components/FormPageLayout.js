@@ -39,21 +39,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <h1>Tell us about you and your company</h1>
             </div>
 
-            <div className="hidden">
-              {/* <!-- A little help for the Netlify bots if you're not using a SSG --> */}
-              <form
-                name="contact"
-                netlify
-                netlify-honeypot="bot-field"
-                hidden
-                tabIndex="-1"
-              >
-                <input type="text" name="name" />
-                <input type="email" name="email" />
-                <textarea name="message"></textarea>
-              </form>
-            </div>
-
             <div className="form">
               <form
                 action="https://app.out.fund/enquire"
@@ -62,6 +47,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="form-name" value="partner" />
                 <Stack spacing={6}>
                   <Split>
                     <FormControl isRequired>
@@ -73,14 +59,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       <Input id="last-name" name="last-name" />
                     </FormControl>
                   </Split>
-                  <input type="hidden" name="form-name" value="partner" />
-                  <input type="hidden" name="partner-name" value={slug} />
-                  <p className="hidden">
-                    <label>
-                      Don’t fill this out if you’re human:{" "}
-                      <input name="bot-field" tabIndex="-1" />
-                    </label>
-                  </p>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-email">Company Email</FormLabel>
                     <Input
@@ -140,6 +118,14 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                   </div>
                   <Button type="submit">Get started</Button>
                 </Stack>
+
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you’re human:{" "}
+                    <input name="bot-field" tabIndex="-1" />
+                  </label>
+                </p>
+                <input type="hidden" name="partner-name" value={slug} />
               </form>
             </div>
           </Wrapper>
