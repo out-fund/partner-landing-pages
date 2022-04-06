@@ -39,6 +39,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <h1>Tell us about you and your company</h1>
             </div>
 
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <textarea name="message"></textarea>
+            </form>
+
             <div className="form">
               <form
                 action="https://app.out.fund/enquire"
