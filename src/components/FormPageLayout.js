@@ -118,6 +118,9 @@ const Container = styled.div`
   font-family: "Inter", sans-serif;
   font-size: 16px;
   letter-spacing: 0.01em;
+  padding-bottom: 100px;
+  background-color: #fafafa;
+  min-height: 100vh;
   h1 {
     font-size: 24px;
     font-weight: 600;
@@ -127,8 +130,12 @@ const Container = styled.div`
   .header {
     .logo {
       text-align: center;
-      margin: 48px 0;
+      padding: 48px 0;
     }
+  }
+  input,
+  select {
+    background-color: #fff;
   }
 `
 const Wrapper = styled.div.attrs(() => ({
@@ -201,6 +208,7 @@ const GlobalStyle = createGlobalStyle`
     font: inherit;
     font-size: 100%;
   }
+
   article,
   aside,
   figcaption,
