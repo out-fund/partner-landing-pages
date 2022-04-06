@@ -19,8 +19,8 @@ function encode(data) {
 }
 
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
-  const [state, setState] = React.useState({})
   const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
+  const [state, setState] = React.useState({ "partner-name": slug })
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -51,6 +51,8 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
       default:
         navigateToUrl = "https://app.out.fund/enquire"
     }
+
+    console.log(state)
 
     fetch("/", {
       method: "POST",
@@ -208,7 +210,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       />
                     </label>
                   </p>
-                  <input type="hidden" name="partner-name" value={slug} />
+                  <input
+                    type="hidden"
+                    name="partner-name"
+                    id="partner-name"
+                    value={slug}
+                  />
 
                   <Button type="submit">Get started</Button>
                 </Stack>
