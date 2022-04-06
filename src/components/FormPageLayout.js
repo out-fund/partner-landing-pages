@@ -57,32 +57,36 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                     </p>
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
-                      <Input id="first-name" />
+                      <Input id="first-name" name="first-name" />
                     </FormControl>
                     <FormControl isRequired>
                       <FormLabel htmlFor="last-name">Last name</FormLabel>
-                      <Input id="last-name" />
+                      <Input id="last-name" name="last-name" />
                     </FormControl>
                   </Split>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-email">Company Email</FormLabel>
-                    <Input id="company-email" type="email" />
+                    <Input
+                      id="company-email"
+                      type="email"
+                      name="company-email"
+                    />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="phone-number">Phone number</FormLabel>
-                    <Input type="tel" id="phone-number" />
+                    <Input type="tel" id="phone-number" name="phone-number" />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-website">
                       Company website
                     </FormLabel>
-                    <Input id="company-website" />
+                    <Input id="company-website" name="company-website" />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="coununtry">
                       Incorporation Country
                     </FormLabel>
-                    <Select placeholder="Select" id="country">
+                    <Select placeholder="Select" id="country" name="country">
                       <option value="Australia">Australia</option>
                       <option value="Spain">Spain</option>
                       <option value="UK">United Kingdom</option>
@@ -92,7 +96,11 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="business-type">Business Type</FormLabel>
-                    <Select placeholder="Select" id="business-type">
+                    <Select
+                      placeholder="Select"
+                      id="business-type"
+                      name="business-type"
+                    >
                       <option value="eCommerce">eCommerce</option>
                       <option value="MobileApp">Spain</option>
                       <option value="SaaS">SaaS</option>
@@ -100,10 +108,8 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                     </Select>
                   </FormControl>
                   <FormControl isRequired>
-                    <FormLabel htmlFor="business-type">
-                      Average Monthly Revenue
-                    </FormLabel>
-                    <Select placeholder="Select" id="amr">
+                    <FormLabel htmlFor="amr">Average Monthly Revenue</FormLabel>
+                    <Select placeholder="Select" id="amr" name="amr">
                       <option value="0">Less than $10K</option>
                       <option value="10000">$10k - $50k</option>
                       <option value="50000">$50k - $100k</option>
