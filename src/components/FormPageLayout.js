@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import { navigate } from "gatsby-link"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 // import parse from "html-react-parser"
 
@@ -13,7 +14,52 @@ import {
   // Button,
 } from "@chakra-ui/react"
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
+  const [state, setState] = React.useState({})
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // console.log(state)
+    let navigateToUrl = ""
+    switch (state.country) {
+      case "UK":
+        navigateToUrl = "https://app.out.fund/enquire"
+        break
+      case "Spain":
+        navigateToUrl = "https://app.out.fund/esp/enquire"
+        break
+      case "US":
+        navigateToUrl = "https://app.out.fund/usa/enquire"
+        break
+      case "Australia":
+        navigateToUrl = "https://app.out.fund/aus/enquire"
+        break
+      case "Other":
+        navigateToUrl = "https://app.out.fund/enquire"
+    }
+
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => navigate(navigateToUrl))
+      .catch((error) => alert(error))
+  }
+
   const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
@@ -39,7 +85,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               <h1>Tell us about you and your company</h1>
             </div>
 
-            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <form
+              name="contact"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              hidden
+            >
               <input type="text" name="name" />
               <input type="email" name="email" />
               <textarea name="message"></textarea>
@@ -52,17 +103,26 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                 action="/thank-you/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="partner" />
                 <Stack spacing={6}>
                   <div className="split">
                     <FormControl isRequired>
                       <FormLabel htmlFor="first-name">First name</FormLabel>
-                      <Input id="first-name" name="first-name" />
+                      <Input
+                        id="first-name"
+                        name="first-name"
+                        onChange={handleChange}
+                      />
                     </FormControl>
                     <FormControl isRequired>
                       <FormLabel htmlFor="last-name">Last name</FormLabel>
-                      <Input id="last-name" name="last-name" />
+                      <Input
+                        id="last-name"
+                        name="last-name"
+                        onChange={handleChange}
+                      />
                     </FormControl>
                   </div>
                   <FormControl isRequired>
@@ -71,23 +131,38 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       id="company-email"
                       type="email"
                       name="company-email"
+                      onChange={handleChange}
                     />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="phone-number">Phone number</FormLabel>
-                    <Input type="tel" id="phone-number" name="phone-number" />
+                    <Input
+                      type="tel"
+                      id="phone-number"
+                      name="phone-number"
+                      onChange={handleChange}
+                    />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="company-website">
                       Company website
                     </FormLabel>
-                    <Input id="company-website" name="company-website" />
+                    <Input
+                      id="company-website"
+                      name="company-website"
+                      onChange={handleChange}
+                    />
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="country">
                       Incorporation Country
                     </FormLabel>
-                    <Select placeholder="Select" id="country" name="country">
+                    <Select
+                      placeholder="Select"
+                      id="country"
+                      name="country"
+                      onChange={handleChange}
+                    >
                       <option value="Australia">Australia</option>
                       <option value="Spain">Spain</option>
                       <option value="UK">United Kingdom</option>
@@ -101,6 +176,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       placeholder="Select"
                       id="business-type"
                       name="business-type"
+                      onChange={handleChange}
                     >
                       <option value="eCommerce">eCommerce</option>
                       <option value="MobileApp">Mobile App</option>
@@ -110,7 +186,12 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                   </FormControl>
                   <FormControl isRequired>
                     <FormLabel htmlFor="amr">Average Monthly Revenue</FormLabel>
-                    <Select placeholder="Select" id="amr" name="amr">
+                    <Select
+                      placeholder="Select"
+                      id="amr"
+                      name="amr"
+                      onChange={handleChange}
+                    >
                       <option value="0">Less than $10K</option>
                       <option value="10000">$10k - $50k</option>
                       <option value="50000">$50k - $100k</option>
@@ -122,16 +203,20 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                     Click below to continue your application with our partner
                     Outfund
                   </div>
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you’re human:{" "}
+                      <input
+                        name="bot-field"
+                        tabIndex="-1"
+                        onChange={handleChange}
+                      />
+                    </label>
+                  </p>
+                  <input type="hidden" name="partner-name" value={slug} />
+
                   <Button type="submit">Get started</Button>
                 </Stack>
-
-                <p className="hidden">
-                  <label>
-                    Don’t fill this out if you’re human:{" "}
-                    <input name="bot-field" tabIndex="-1" />
-                  </label>
-                </p>
-                <input type="hidden" name="partner-name" value={slug} />
               </form>
             </div>
           </Wrapper>
