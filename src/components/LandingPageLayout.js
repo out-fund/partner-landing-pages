@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
@@ -65,7 +66,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                     <p className="description">{first.description}</p>
                   </div>
                   <div>
-                    <Button href={`${slug}/get-funded`}>{first.button}</Button>
+                    <Button to={`/${slug}/get-funded`}>{first.button}</Button>
                   </div>
                 </div>
                 <div className="right">
@@ -836,7 +837,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                 <div className="right">
                   <h2 className="title">{parse(fourth.title)}</h2>
                   <p className="description">{parse(fourth.description)}</p>
-                  <Button href={`${slug}/get-funded`}>{fourth.button}</Button>
+                  <Button to={`/${slug}/get-funded`}>{fourth.button}</Button>
                 </div>
               </Wrapper>
             </Repay>
@@ -859,7 +860,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                     ))}
                   </ul>
                 </div>
-                <Button href={`${slug}/get-funded`}>{sixth.button}</Button>
+                <Button to={`/${slug}/get-funded`}>{sixth.button}</Button>
               </Wrapper>
             </WeFund>
           </Main>
@@ -944,7 +945,7 @@ const Wrapper = styled.div.attrs(() => ({
   padding: 0 16px;
 `
 
-const Button = styled.a`
+const Button = styled(Link)`
   display: inline-block;
   text-decoration: none;
   color: ${(props) => props.theme.buttonFontColor};
