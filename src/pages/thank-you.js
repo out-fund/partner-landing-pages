@@ -6,7 +6,7 @@ const ThankYou = ({ location }) => {
   // if (location.state.themeColor) {
   if (typeof window === "undefined") {
     vars = {
-      url: "test",
+      url: "https://app.out.fund/enquire",
       fontColor: {
         heading: "#000",
         button: "#fff",
