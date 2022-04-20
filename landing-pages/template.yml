@@ -10,6 +10,25 @@ published: false
 partnerLogo: "templateLogo"
 partnerLogoCard: "templateLogoCard"
 
+colors: {
+    theme: "#005450",
+    page: "#f6f5e9",
+    # Color used as background in dark sections
+
+    # Card colors
+    card: { bg: "#f6f5e9", font: "#353640", elements: "#faf" },
+    font:
+      {
+        heading: "#353640",
+        inverseHeading: "#fff",
+        body: "#353640",
+        inverseBody: "#C6C6C6",
+      },
+    button: { bg: "", text: "" },
+    iconSection: { icon: "#005450", bg: "#fafafa" },
+    darkSection: { bg: "#005450", text: "", button: { bg: "", text: "" } },
+  }
+
 # This color will be used for buttons and colord titles
 themeColor: "#F200F6"
 
