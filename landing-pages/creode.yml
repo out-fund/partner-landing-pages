@@ -1,25 +1,22 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: sitruna
+slug: creode
 
 # Set this to true when you want to publish the page
-published: true
+published: false
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "sitruna"
-partnerLogoCard: "sitruna-card"
+partnerLogo: "creode"
+partnerLogoCard: "creode-card"
 
 colors: {
-    theme: "#FED357",
+    theme: "#e72170",
     page: "#fff",
-
-    navbarBg: "", # If nothing present, page color will be used
-
-    # Color used as background in dark sections
+    navbarBg: "#000", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000", font: "#fff", elements: "#FED357" },
+    card: { bg: "#000", font: "#fff", elements: "#e72170" },
     font:
       {
         heading: "#000",
@@ -27,27 +24,9 @@ colors: {
         body: "#222",
         inverseBody: "#ccc",
       },
-    button: { bg: "#FED357", text: "#222" },
-    iconSection: { icon: "#FED357", bg: "#fafafa" },
-    darkSection: { bg: "#000", button: { bg: "#FED357", text: "#222" } },
-  }
-
-# This color will be used for buttons and colord titles
-themeColor: "#FED357"
-
-# Color used as background in dark sections
-darkBgColor: "#000"
-
-# Card colors
-card: { backgroundColor: "#000", fontColor: "#fff" }
-
-fontColor:
-  {
-    heading: "#000",
-    inverseHeading: "#fff",
-    body: "#222",
-    inverseBody: "#C6C6C6",
-    button: "#000",
+    button: { bg: "#e72170", text: "#fff" },
+    iconSection: { icon: "#e72170", bg: "#fafafa" },
+    darkSection: { bg: "#000", button: { bg: "#e72170", text: "#fff" } },
   }
 
 # Content
@@ -56,10 +35,10 @@ first:
     title:
       {
         firstLine: "Revenue Based Finance",
-        secondLine: "For Amazon Businesses",
+        secondLine: "For Founders Like You.",
       },
 
-    description: "As Amazon experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Sitruna Finance offers a new way to help you fund your Amazon brand with funding from £10K to £2M.",
+    description: "Supercharged funding from £10K to £2M for your marketing & inventory purchases.",
 
     button: "Get funded",
   }
@@ -104,8 +83,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, Sitruna Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Sitruna Finance offers a new way to help you fund your Amazon brand.",
+    description: "We offer non-dilutive capital to eCommerce and invoice based B2B brands, with no personal guarantees and with only one flat, transparent fee repaid fairly from a pre-agreed revenue share. We invest up to £2m into each of our brands as growth-focused partners, so that founders like you can grow your business without having to give up any equity or putting your home on the line.",
+    statement: "We do this through our partner Outfund, the UK’s largest revenue based finance provider.",
   }
 
 sixth:

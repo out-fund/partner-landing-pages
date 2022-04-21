@@ -26,8 +26,6 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
   let navigateToUrl = ""
-  const themeColor = colors.theme
-  const fontColor = colors.font.heading
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -66,7 +64,7 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
     })
       .then(() =>
         navigate("/thank-you/", {
-          state: { navigateToUrl, themeColor, fontColor },
+          state: { navigateToUrl, colors },
         })
       )
       .catch((error) => alert(error))

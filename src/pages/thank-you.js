@@ -3,7 +3,9 @@ import styled from "styled-components"
 
 const ThankYou = ({ location }) => {
   let vars = {}
-  // if (location.state.themeColor) {
+
+  // console.log(location)
+
   if (typeof window === "undefined") {
     vars = {
       url: "https://app.out.fund/enquire",
@@ -17,10 +19,10 @@ const ThankYou = ({ location }) => {
     vars = {
       url: location.state.navigateToUrl,
       fontColor: {
-        heading: location.state.fontColor.heading,
-        button: location.state.fontColor.button,
+        heading: location.state.colors.font.heading,
+        button: location.state.colors.button.text,
       },
-      themeColor: location.state.themeColor,
+      themeColor: location.state.colors.button.bg,
     }
   }
 

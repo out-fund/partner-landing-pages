@@ -13,6 +13,8 @@ partnerLogoCard: "blazon-card"
 colors: {
     theme: "#005450",
     page: "#f6f5e9",
+
+    navbarBg: "", # If nothing present, page color will be used
     # Color used as background in dark sections
 
     # Card colors

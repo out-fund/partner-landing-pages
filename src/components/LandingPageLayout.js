@@ -761,7 +761,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                           d="M56.628 71.724C85.934 58.627 93.846 39.34 116.705 39.34c28.573 0 35.109 21.633 65.538 21.633C212.672 60.972 223.624 1 270.148 1"
                         ></path>
                         <path
-                          stroke={colors.darkSection.button.bg}
+                          stroke={colors.theme}
                           strokeWidth="1.341"
                           d="M56.628 107.423c29.362-13.097 38.054-15.155 60.957-15.155 28.629 0 33.165 7.41 63.652 7.41 40.512 0 49.844-30.985 88.911-30.985"
                         ></path>
@@ -845,7 +845,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                 <div className="right">
                   <h2 className="title">{parse(fourth.title)}</h2>
                   <p className="description">{parse(fourth.description)}</p>
-                  <Button to={`/${slug}/get-funded`} inverse>
+                  <Button to={`/${slug}/get-funded`} inverse="true">
                     {fourth.button}
                   </Button>
                 </div>
@@ -870,7 +870,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                     ))}
                   </ul>
                 </div>
-                <Button to={`/${slug}/get-funded`} inverse>
+                <Button to={`/${slug}/get-funded`} inverse="true">
                   {sixth.button}
                 </Button>
               </Wrapper>
@@ -977,7 +977,9 @@ const Button = styled(Link)`
 `
 
 const Navbar = styled.nav`
-  margin-top: 32px;
+  background-color: ${(props) =>
+    props.theme.navbarBg ? props.theme.navbarBg : props.theme.page};
+  padding: 24px 0;
   .logo {
     /* width: 160px; */
     /* height: 64px; */
@@ -1270,6 +1272,7 @@ export const query = graphql`
         }
         page
         theme
+        navbarBg
       }
       fifth {
         description
