@@ -18,12 +18,8 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     fifth,
     sixth,
     slug,
-    themeColor,
     partnerLogo,
     partnerLogoCard,
-    card,
-    fontColor,
-    darkBgColor,
     colors,
   } = landingPagesYaml
 
@@ -63,10 +59,14 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                   <div className="text">
                     <h1>
                       {parse(first.title.firstLine)}
-                      <br />
-                      <span style={{ color: colors.theme }}>
-                        {parse(first.title.secondLine)}
-                      </span>
+                      {first.title.secondLine && (
+                        <>
+                          <br />
+                          <span style={{ color: colors.theme }}>
+                            {parse(first.title.secondLine)}
+                          </span>
+                        </>
+                      )}
                     </h1>
                     <p className="description">{first.description}</p>
                   </div>
@@ -168,7 +168,10 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                       <div className="icon">
                         <span
                           className="material-icons-round"
-                          style={{ fontSize: "48px", color: colors.theme }}
+                          style={{
+                            fontSize: "48px",
+                            color: colors.iconSection.icon,
+                          }}
                         >
                           {item.icon}
                         </span>
@@ -1081,6 +1084,7 @@ const Repay = styled.section`
     grid-template-columns: 270px 1fr;
     gap: 80px;
     align-items: center;
+    max-width: 970px;
     .left {
       display: grid;
     }
@@ -1267,18 +1271,6 @@ export const query = graphql`
         page
         theme
       }
-      darkBgColor
-      fontColor {
-        heading
-        inverseHeading
-        body
-        inverseBody
-        button
-      }
-      card {
-        backgroundColor
-        fontColor
-      }
       fifth {
         description
         statement
@@ -1306,7 +1298,6 @@ export const query = graphql`
         }
       }
       slug
-      themeColor
       sixth {
         title
         list

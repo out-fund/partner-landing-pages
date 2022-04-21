@@ -19,13 +19,15 @@ function encode(data) {
 }
 
 const FormPageLayout = ({ data: { landingPagesYaml } }) => {
-  const { themeColor, partnerLogo, fontColor, slug } = landingPagesYaml
+  const { colors, partnerLogo, slug } = landingPagesYaml
   const [state, setState] = React.useState({ "partner-name": slug })
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
   let navigateToUrl = ""
+  const themeColor = colors.theme
+  const fontColor = colors.font.heading
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -73,18 +75,18 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
 
-  const theme = {
-    primary: themeColor,
-    heading: fontColor.heading,
-    body: fontColor.body,
-    buttonFontColor: fontColor.button,
-  }
+  // const theme = {
+  //   primary: themeColor,
+  //   heading: fontColor.heading,
+  //   body: fontColor.body,
+  //   colors.button.bg: fontColor.button,
+  // }
 
   return (
     <>
-      <GlobalStyle />
       <Container>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={colors}>
+          <GlobalStyle />
           <Wrapper>
             <div className="header">
               <div className="logo">
@@ -288,13 +290,13 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  color: ${(props) => props.theme.buttonFontColor};
+  color: ${(props) => props.theme.button.text};
   font-weight: 600;
   padding: 12px 24px;
   line-height: 24px;
   margin: 0;
   border: none;
-  background-color: ${(props) => props.theme.primary};
+  background-color: ${(props) => props.theme.button.bg};
   border-radius: 100px;
   font-size: 16px;
 `
@@ -363,6 +365,9 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  /* body {
+    background-color: ${(props) => props.theme.page} !important;
+  } */
 `
 
 export const query = graphql`
@@ -371,12 +376,37 @@ export const query = graphql`
       id
       slug
       published
-      themeColor
       partnerLogo
-      fontColor {
-        heading
-        body
-        button
+      colors {
+        button {
+          bg
+          text
+        }
+        card {
+          bg
+          font
+          elements
+        }
+        darkSection {
+          bg
+          button {
+            bg
+            text
+          }
+          text
+        }
+        font {
+          body
+          heading
+          inverseBody
+          inverseHeading
+        }
+        iconSection {
+          bg
+          icon
+        }
+        page
+        theme
       }
     }
   }
