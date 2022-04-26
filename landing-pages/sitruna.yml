@@ -11,7 +11,7 @@ partnerLogo: "sitruna"
 partnerLogoCard: "sitruna-card"
 
 # This color will be used for buttons and colord titles
-themeColor: "#00D357"
+themeColor: "#FED357"
 
 # Color used as background in dark sections
 darkBgColor: "#000"
