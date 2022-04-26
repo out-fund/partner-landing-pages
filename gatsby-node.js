@@ -11,6 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             slug
             hideLandingPage
+            published
           }
         }
       }
@@ -26,7 +27,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // TODO If published create page
 
   createLandingPages.forEach(({ node }, index) => {
-    if (!node.hideLandingPage) {
+    if (!node.hideLandingPage && node.published) {
       createPage({
         path: `/${node.slug}`,
         component: path.resolve(`./src/components/LandingPageLayout.js`),
