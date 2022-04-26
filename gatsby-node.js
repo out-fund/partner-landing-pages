@@ -10,6 +10,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           node {
             id
             slug
+            hideLandingPage
           }
         }
       }
@@ -23,13 +24,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const createLandingPages = landingPages.data.allLandingPagesYaml.edges
 
   // TODO If published create page
+
   createLandingPages.forEach(({ node }, index) => {
-    createPage({
-      path: `/${node.slug}`,
-      component: path.resolve(`./src/components/LandingPageLayout.js`),
-      context: { pageId: node.id },
-    })
+    if (!node.hideLandingPage) {
+      createPage({
+        path: `/${node.slug}`,
+        component: path.resolve(`./src/components/LandingPageLayout.js`),
+        context: { pageId: node.id },
+      })
+    }
   })
+
   createLandingPages.forEach(({ node }, index) => {
     createPage({
       path: `/${node.slug}/get-funded`,
