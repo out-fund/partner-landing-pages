@@ -1,13 +1,19 @@
 import React from "react"
+import styled from "styled-components"
 
 // markup
 const IndexPage = () => {
   return (
     <main>
-      {/* <title>Home Page</title> */}
-      <h1>Powered by Outfund.</h1>
+      <Title>
+        Powered by <a href="https://out.fund/">Outfund.</a>
+      </Title>
     </main>
   )
 }
 
 export default IndexPage
+
+const Title = styled.h1`
+  text-align: center;
+`
