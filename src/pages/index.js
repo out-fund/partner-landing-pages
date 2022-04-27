@@ -15,5 +15,10 @@ const IndexPage = () => {
 export default IndexPage
 
 const Title = styled.h1`
+  padding: 10px;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: #1a65ba;
+  }
 `
