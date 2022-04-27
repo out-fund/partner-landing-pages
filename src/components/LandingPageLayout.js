@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import styled, {
   createGlobalStyle,
@@ -42,8 +43,10 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
   return (
     <>
       <ThemeProvider theme={colors}>
+        <Helmet>
+          <title>{slug.charAt(0).toUpperCase() + slug.slice(1)}</title>
+        </Helmet>
         <GlobalStyle />
-
         <Container>
           <Navbar>
             <Wrapper>
