@@ -37,10 +37,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   createLandingPages.forEach(({ node }, index) => {
-    createPage({
-      path: `/${node.slug}/get-funded`,
-      component: path.resolve(`./src/components/FormPageLayout.js`),
-      context: { pageId: node.id },
-    })
+    if (node.published) {
+      createPage({
+        path: `/${node.slug}/get-funded`,
+        component: path.resolve(`./src/components/FormPageLayout.js`),
+        context: { pageId: node.id },
+      })
+    }
   })
 }

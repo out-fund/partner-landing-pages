@@ -13,6 +13,7 @@ partnerLogoCard: "creode-card"
 colors: {
     theme: "#e72170",
     page: "#fff",
+
     navbarBg: "#000", # If nothing present, page color will be used
 
     # Card colors

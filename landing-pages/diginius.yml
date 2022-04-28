@@ -9,15 +9,13 @@ hideLandingPage: true
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
 partnerLogo: "diginius"
-partnerLogoCard: "sitruna-card"
+partnerLogoCard: ""
 
 colors: {
     theme: "#fcce00",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
-
-    # Color used as background in dark sections
 
     # Card colors
     card: { bg: "#000", font: "#fff", elements: "#FED357" },
@@ -31,24 +29,6 @@ colors: {
     button: { bg: "#0091FF", text: "#fff" },
     iconSection: { icon: "#FED357", bg: "#fafafa" },
     darkSection: { bg: "#000", button: { bg: "#FED357", text: "#222" } },
-  }
-
-# This color will be used for buttons and colord titles
-themeColor: "#FED357"
-
-# Color used as background in dark sections
-darkBgColor: "#000"
-
-# Card colors
-card: { backgroundColor: "#000", fontColor: "#fff" }
-
-fontColor:
-  {
-    heading: "#000",
-    inverseHeading: "#fff",
-    body: "#222",
-    inverseBody: "#C6C6C6",
-    button: "#000",
   }
 
 # Content

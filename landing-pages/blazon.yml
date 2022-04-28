@@ -15,7 +15,6 @@ colors: {
     page: "#f6f5e9",
 
     navbarBg: "", # If nothing present, page color will be used
-    # Color used as background in dark sections
 
     # Card colors
     card: { bg: "#005450", font: "#f6f5e9", elements: "#ffc776" },
@@ -34,24 +33,6 @@ colors: {
         # BG color here updates the lines in the revenue illustration
         button: { bg: "#ffc776", text: "#005450" },
       },
-  }
-
-# This color will be used for buttons and colord titles
-themeColor: "#F200F6"
-
-# Color used as background in dark sections
-darkBgColor: "#333"
-
-# Card colors
-card: { backgroundColor: "#0A213B", fontColor: "#fff" }
-
-fontColor:
-  {
-    heading: "#0C2542",
-    inverseHeading: "#fff",
-    body: "#1C3654",
-    inverseBody: "#C6C6C6",
-    button: "#fff",
   }
 
 # Content

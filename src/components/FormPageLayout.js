@@ -82,17 +82,16 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
   return (
     <>
-      <Container>
-        <ThemeProvider theme={colors}>
+      <ThemeProvider theme={colors}>
+        <Container>
           <GlobalStyle />
-          <Wrapper>
-            <div className="header">
-              <div className="logo">
-                <PartnerLogo />
-              </div>
-              <h1>Tell us about you and your company</h1>
+          <div className="header">
+            <div className="logo">
+              <PartnerLogo />
             </div>
-
+            <h1>Tell us about you and your company</h1>
+          </div>
+          <Wrapper>
             <div className="form">
               <form
                 name="partner"
@@ -222,8 +221,8 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
               </form>
             </div>
           </Wrapper>
-        </ThemeProvider>
-      </Container>
+        </Container>
+      </ThemeProvider>
     </>
   )
 }
@@ -255,10 +254,13 @@ const Container = styled.div`
   .header {
     .logo {
       text-align: center;
-      padding: 48px 0;
-      /* height: 32px; */
-      /* margin: 0 auto; */
-      /* width: 100%; */
+      padding: 24px 0;
+      background-color: ${(props) =>
+        props.theme.navbarBg ? props.theme.navbarBg : props.theme.page};
+      margin-bottom: 40px;
+      box-shadow: 0px 17px 33px rgba(5, 24, 64, 0.07),
+        0px 3.8002px 13.45px rgba(5, 24, 64, 0.0522616),
+        0px 1.07885px 7.14579px rgba(5, 24, 64, 0.0377807);
     }
   }
   .instructions {
@@ -376,6 +378,7 @@ export const query = graphql`
       published
       partnerLogo
       colors {
+        navbarBg
         button {
           bg
           text

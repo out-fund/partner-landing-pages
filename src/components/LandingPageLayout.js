@@ -38,7 +38,10 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
-  const PartnerLogoCard = svgDir(`./${partnerLogoCard}.svg`).default
+  let PartnerLogoCard
+  if (partnerLogoCard) {
+    PartnerLogoCard = svgDir(`./${partnerLogoCard}.svg`).default
+  }
 
   return (
     <>
@@ -80,9 +83,12 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                 <div className="right">
                   {/* TODO if image show image else show credit card */}
                   <div className="card">
-                    <div className="card-logo">
-                      <PartnerLogoCard className="partnerLogoCard" />
-                    </div>
+                    {partnerLogoCard && (
+                      <div className="card-logo">
+                        <PartnerLogoCard className="partnerLogoCard" />
+                      </div>
+                    )}
+
                     <svg
                       width="337"
                       height="257"
