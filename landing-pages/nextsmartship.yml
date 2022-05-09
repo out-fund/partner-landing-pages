@@ -8,7 +8,7 @@ published: true
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
 partnerLogo: "NSS2"
-partnerLogoCard: ""
+partnerLogoCard: "NSS"
 
 colors: {
     theme: "#E6EEFC",
@@ -33,9 +33,9 @@ colors: {
 # Content
 first:
   {
-    title: { firstLine: "First line", secondLine: "Second line" },
+    title: { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
-    description: "As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Grantify Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £2M.",
+    description: "As eCommerce experts, we know that having the capital to pay for logistics, inventory, or marketing is a huge barrier to growth for any brand. Next Smart Ship Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $2M.",
 
     button: "Get funded",
   }
@@ -80,8 +80,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, Sitruna Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Sitruna Finance offers a new way to help you fund your Amazon brand.",
+    description: "Powered by Outfund, Next Smart Ship Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
+    statement: "Next Smart Ship Finance offers a new way to help you fund your eCommerce business.",
   }
 
 sixth:
@@ -89,9 +89,9 @@ sixth:
     title: "We fund online businesses who",
     list:
       [
-        "Sell products on Amazon",
+        "Sell products online",
         "Have been trading for 6 months +",
-        "Earn £10K+ monthly revenue",
+        "Earn $10K+ monthly revenue",
       ],
     button: "Get funded",
   }
