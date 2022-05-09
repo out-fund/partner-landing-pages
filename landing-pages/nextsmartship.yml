@@ -11,8 +11,8 @@ partnerLogo: "NSS2"
 partnerLogoCard: ""
 
 colors: {
-    theme: "#0554F2",
-    page: "#E6EEFC",
+    theme: "#E6EEFC",
+    page: "#0554F2",
 
     navbarBg: "", # If nothing present, page color will be used
 
