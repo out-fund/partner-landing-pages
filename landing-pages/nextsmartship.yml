@@ -11,13 +11,13 @@ partnerLogo: "NSS2"
 partnerLogoCard: "NSS"
 
 colors: {
-    theme: "#E6EEFC",
-    page: "#0554F2",
+    theme: "#0554F2",
+    page: "#E6EEFC",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000", font: "#fff", elements: "#faf" },
+    card: { bg: "#FFFFFF", font: "#0554F2", elements: "#faf" },
     font:
       {
         heading: "#000",
