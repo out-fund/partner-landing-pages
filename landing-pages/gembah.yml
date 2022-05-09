@@ -11,8 +11,8 @@ partnerLogo: "gembah-logo"
 partnerLogoCard: ""
 
 colors: {
-    theme: "#42445c",
-    page: "#fec72f",
+    theme: "#fec72f",
+    page: "#42445c",
 
     navbarBg: "", # If nothing present, page color will be used
 
@@ -25,17 +25,17 @@ colors: {
         body: "#222",
         inverseBody: "#ccc",
       },
-    button: { bg: "#faf", text: "#fff" },
-    iconSection: { icon: "#faf", bg: "#fafafa" },
-    darkSection: { bg: "#000", button: { bg: "#faf", text: "#fff" } },
+    button: { bg: "#fec72f", text: "#fff" },
+    iconSection: { icon: "#fec72f", bg: "#fafafa" },
+    darkSection: { bg: "#000", button: { bg: "fec72f", text: "#fff" } },
   }
 
 # Content
 first:
   {
-    title: { firstLine: "First line", secondLine: "Second line" },
+    title: { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
-    description: "As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Grantify Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £2M.",
+    description: "As manufacturing experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Gembah Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
 
     button: "Get funded",
   }
@@ -80,8 +80,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, Sitruna Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Sitruna Finance offers a new way to help you fund your Amazon brand.",
+    description: "Powered by Outfund, Gembah Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue-based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees.",
+    statement: "Gembah Capital offers a new way to help you fund your online business.",
   }
 
 sixth:
@@ -89,9 +89,9 @@ sixth:
     title: "We fund online businesses who",
     list:
       [
-        "Sell products on Amazon",
-        "Have been trading for 6 months +",
-        "Earn £10K+ monthly revenue",
+        "Sell products or services (SaaS) online",
+        "Have been trading for 6 months+",
+        "Earn $10K+ monthly revenue",
       ],
     button: "Get funded",
   }
