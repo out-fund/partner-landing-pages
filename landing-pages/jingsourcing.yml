@@ -11,13 +11,13 @@ partnerLogo: "jinglogo"
 partnerLogoCard: "jinglogo"
 
 colors: {
-    theme: "#FED357",
+    theme: "#ff9933",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000", font: "#fff", elements: "#FED357" },
+    card: { bg: "#000", font: "#fff", elements: "#ff9933" },
     font:
       {
         heading: "#000",
