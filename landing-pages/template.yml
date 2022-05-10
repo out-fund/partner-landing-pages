@@ -42,7 +42,7 @@ first:
 second:
   [
     {
-      title: "No Equity Dilution <br/> Or Person Guarantee",
+      title: "No Equity Dilution <br/> Or Personal Guarantee",
       icon: "group_off",
     },
     { title: "One Flat <br/> Transparent Fee", icon: "task_alt" },
