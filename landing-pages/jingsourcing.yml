@@ -26,8 +26,8 @@ colors: {
         inverseBody: "#ccc",
       },
     button: { bg: "#ff9933", text: "#222" },
-    iconSection: { icon: "#FED357", bg: "#fafafa" },
-    darkSection: { bg: "#000", button: { bg: "#FED357", text: "#222" } },
+    iconSection: { icon: "#ff9933", bg: "#fafafa" },
+    darkSection: { bg: "#000", button: { bg: "#ff9933", text: "#222" } },
   }
 
 # Content
