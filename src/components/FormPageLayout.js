@@ -258,6 +258,8 @@ const Container = styled.div`
       background-color: ${(props) =>
         props.theme.navbarBg ? props.theme.navbarBg : props.theme.page};
       margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
       box-shadow: 0px 17px 33px rgba(5, 24, 64, 0.07),
         0px 3.8002px 13.45px rgba(5, 24, 64, 0.0522616),
         0px 1.07885px 7.14579px rgba(5, 24, 64, 0.0377807);
