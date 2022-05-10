@@ -11,7 +11,7 @@ partnerLogo: "borderl3ss-card"
 partnerLogoCard: "borderl3ss-card"
 
 colors: {
-    theme: "#0d0e33",
+    theme: "#000",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
