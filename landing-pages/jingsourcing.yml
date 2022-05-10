@@ -39,7 +39,7 @@ first:
         secondLine: "For Amazon Businesses",
       },
 
-    description: "As Amazon experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Sitruna Finance offers a new way to help you fund your Amazon brand with funding from £10K to £2M.",
+    description: "As Sourcing experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Jing Sourcing Capital offers a new way to help you fund your eCommerce brand with funding from $10K to $2M.",
 
     button: "Get funded",
   }
@@ -84,8 +84,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, Sitruna Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Sitruna Finance offers a new way to help you fund your Amazon brand.",
+    description: "Powered by Outfund, Jing Sourcing Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
+    statement: "Jing Sourcing Capital offers a new way to help you fund your eCommerce brand.",
   }
 
 sixth:
@@ -95,7 +95,7 @@ sixth:
       [
         "Sell products on Amazon",
         "Have been trading for 6 months +",
-        "Earn £10K+ monthly revenue",
+        "Earn $10K+ monthly revenue",
       ],
     button: "Get funded",
   }
