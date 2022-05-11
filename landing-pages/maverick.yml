@@ -26,7 +26,7 @@ colors: {
         inverseBody: "#ccc",
       },
     button: { bg: "#23323e", text: "#fff" },
-    iconSection: { icon: "#faf", bg: "#23323e" },
+    iconSection: { icon: "#FFFFFF", bg: "#23323e" },
     darkSection: { bg: "#000", button: { bg: "#23323e", text: "#fff" } },
   }
 
