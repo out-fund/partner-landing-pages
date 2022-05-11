@@ -11,13 +11,13 @@ partnerLogo: "maverick"
 partnerLogoCard: "maverick"
 
 colors: {
-    theme: "#faf",
+    theme: "#23323e",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000", font: "#fff", elements: "#faf" },
+    card: { bg: "#000", font: "#fff", elements: "#23323e" },
     font:
       {
         heading: "#000",
@@ -25,15 +25,15 @@ colors: {
         body: "#222",
         inverseBody: "#ccc",
       },
-    button: { bg: "#faf", text: "#fff" },
-    iconSection: { icon: "#faf", bg: "#fafafa" },
-    darkSection: { bg: "#000", button: { bg: "#faf", text: "#fff" } },
+    button: { bg: "#23323e", text: "#fff" },
+    iconSection: { icon: "#faf", bg: "#23323e" },
+    darkSection: { bg: "#000", button: { bg: "#23323e", text: "#fff" } },
   }
 
 # Content
 first:
   {
-    title: { firstLine: "First line", secondLine: "Second line" },
+    title: { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
     description: "As fulfillment experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Maverick Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $2M.",
 
