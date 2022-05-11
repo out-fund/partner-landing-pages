@@ -11,13 +11,13 @@ partnerLogo: "FinOptimal"
 partnerLogoCard: "FinOptimal"
 
 colors: {
-    theme: "#2F0052",
+    theme: "#FFFFFF",
     page: "#010A46",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#2F0052", font: "#010A46", elements: "#FFFFF" },
+    card: { bg: "#2F0052", font: "#FFFFFF", elements: "#FFFFF" },
     font:
       {
         heading: "#FFFFFF",
