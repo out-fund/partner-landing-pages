@@ -11,13 +11,13 @@ partnerLogo: "outfund-dark-blue"
 partnerLogoCard: ""
 
 colors: {
-    theme: "#faf",
+    theme: "#0D2C4F",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000", font: "#fff", elements: "#faf" },
+    card: { bg: "#0D2C4F", font: "#fff", elements: "#18CCD8" },
     font:
       {
         heading: "#000",
