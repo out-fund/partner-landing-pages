@@ -11,7 +11,7 @@ partnerLogo: "maverick"
 partnerLogoCard: "maverick-card"
 
 colors: {
-    theme: "#23323e",
+    theme: "#d6dbd9",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
