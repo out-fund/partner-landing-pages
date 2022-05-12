@@ -263,6 +263,10 @@ const Container = styled.div`
       box-shadow: 0px 17px 33px rgba(5, 24, 64, 0.07),
         0px 3.8002px 13.45px rgba(5, 24, 64, 0.0522616),
         0px 1.07885px 7.14579px rgba(5, 24, 64, 0.0377807);
+
+      svg {
+        max-height: 32px;
+      }
     }
   }
   .instructions {

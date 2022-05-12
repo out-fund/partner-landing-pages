@@ -11,23 +11,25 @@ partnerLogo: "FinOptimal"
 partnerLogoCard: "FinOptimal"
 
 colors: {
-    theme: "#FFFFFF",
-    page: "#010A46",
+    theme: "#8D47B3",
+    # page: "#010A46",
+    page: "#fff",
 
-    navbarBg: "", # If nothing present, page color will be used
+    navbarBg: "#010A46", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#2F0052", font: "#FFFFFF", elements: "#FFFFF" },
+    # card: { bg: "#2F0052", font: "#FFFFFF", elements: "#FFFFF" },
+    card: { bg: "#270050", font: "#FFFFFF", elements: "#8D47B3" },
     font:
       {
-        heading: "#FFFFFF",
-        inverseHeading: "#FFFFFF",
-        body: "#FFFFFF",
-        inverseBody: "##FFFFFF",
+        heading: "#270050",
+        inverseHeading: "#fff",
+        body: "#270050",
+        inverseBody: "#fff",
       },
-    button: { bg: "#0554F2", text: "#fff" },
-    iconSection: { icon: "#000000", bg: "#fafafa" },
-    darkSection: { bg: "#000", button: { bg: "#0554F2", text: "#fff" } },
+    button: { bg: "#8D47B3", text: "#fff" },
+    iconSection: { icon: "#8D47B3", bg: "#f5f5f5" },
+    darkSection: { bg: "#010A46", button: { bg: "#8D47B3", text: "#fff" } },
   }
 
 # Content
