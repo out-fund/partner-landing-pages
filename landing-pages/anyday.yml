@@ -1,13 +1,13 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: template2
+slug: anyday.yml
 
 # Set this to true when you want to publish the page
 published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "Outfund-dark"
+partnerLogo: "anyday"
 partnerLogoCard: "Outfund-light"
 
 colors: {
@@ -34,9 +34,9 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
+      { firstLine: "Revenue Based Finance", secondLine: "For Online Businesses" },
 
-    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Anyday Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
 
     button: "Get funded",
   }
