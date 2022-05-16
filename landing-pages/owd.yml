@@ -22,8 +22,8 @@ colors: {
       {
         heading: "#000",
         inverseHeading: "#0D2C4F",
-        body: "#222",
-        inverseBody: "#ccc",
+        body: "#000",
+        inverseBody: "#000",
       },
     button: { bg: "#ff6628", text: "#000" },
     iconSection: { icon: "#FF766B", bg: "#fafafa" },
