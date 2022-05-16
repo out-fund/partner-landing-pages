@@ -21,13 +21,13 @@ colors: {
     font:
       {
         heading: "#000",
-        inverseHeading: "#0D2C4F",
+        inverseHeading: "#000",
         body: "#222",
         inverseBody: "#ccc",
       },
     button: { bg: "#547E6F", text: "#fff" },
     iconSection: { icon: "#FF766B", bg: "#fafafa" },
-    darkSection: { bg: "#fafafa", button: { bg: "#547E6F", text: "#0D2C4F" } },
+    darkSection: { bg: "#fafafa", button: { bg: "#547E6F", text: "#000" } },
   }
 
 # Content
