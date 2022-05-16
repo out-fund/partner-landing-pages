@@ -44,7 +44,7 @@ first:
         secondLine: "",
       },
 
-    description: "With Blazon’s Funding Package, securing ad spend can be a problem of the past.",
+    description: "With Kia Ora and Outfund's partnership, securing ad spend can be a problem of the past.",
 
     button: "Get funded",
   }
@@ -90,7 +90,7 @@ fifth:
   {
     title: "What We Do",
     description: "We provide a quick, stress-free funding solution so that your efforts can be focused on driving growth at scale. Utilize your funding effectively to reduce the cost of acquiring your leads and increase your return on ad spend. There is no better time to cut through the noise and bring the attention to your brand that it deserves.",
-    statement: "Don’t miss your opportunity to receive up to £2M for advertising inventory in as fast as 24 hours!",
+    statement: "Don’t miss your opportunity to receive up to $3M for advertising inventory in as fast as 24 hours!",
   }
 
 sixth:
@@ -98,9 +98,9 @@ sixth:
     title: "We fund online businesses who",
     list:
       [
-        "Sell products on Amazon",
+        "Sell products online",
         "Have been trading for 6 months +",
-        "Earn £10K+ monthly revenue",
+        "Earn $10K+ monthly revenue",
       ],
     button: "Get funded",
   }
