@@ -17,7 +17,7 @@ colors: {
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#0D2C4F", font: "#F2F6FA", elements: "#00A3D7" },
+    card: { bg: "#7C377a", font: "#F2F6FA", elements: "#FFFFFF" },
     font:
       {
         heading: "#0C2542",
@@ -25,7 +25,7 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#00A3D7", text: "#fff" },
+    button: { bg: "#7C377a", text: "#fff" },
     iconSection: { icon: "#00A3D7", bg: "#F2F6FA" },
     darkSection: { bg: "#0D2C4F", button: { bg: "#00A3D7", text: "" } },
   }
@@ -36,7 +36,7 @@ first:
     title:
       { firstLine: "Revenue Based Finance", secondLine: "For Online Businesses" },
 
-    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Anyday Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Anyday Capital (powered by Outfund) offers a new way to help you fund your online business with funding from €10K to €2M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, ___ Captial/Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "___ Finance offers a new way to help you fund your ___ brand.",
+    description: "Powered by Outfund, Anyday Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
+    statement: "Anyday Capital offers a new way to help you fund your growth.",
   }
 
 sixth:
@@ -90,9 +90,9 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products on ___",
-        "Have been trading for 6 months +",
-        "Earn $10K+ monthly revenue",
+        "Sell products online",
+        "Have been trading for 6 months+",
+        "Earn €10K+ monthly revenue",
       ],
     button: "Get funded",
   }
