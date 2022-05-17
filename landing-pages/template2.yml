@@ -11,7 +11,7 @@ partnerLogo: "Outfund-dark"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#00A3D7",
+    theme: "#Faf",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
