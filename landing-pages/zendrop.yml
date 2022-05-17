@@ -17,7 +17,7 @@ colors: {
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#6857AB", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "CCBCF9", font: "#F2F6FA", elements: "#6857AB" },
     font:
       {
         heading: "#0C2542",
