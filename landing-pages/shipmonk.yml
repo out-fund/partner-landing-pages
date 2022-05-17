@@ -7,37 +7,34 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "shipmonk_sized"
-partnerLogoCard: "shipmonk_sized"
+partnerLogo: "shipmonk1"
+partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#eeeeed",
+    theme: "#53A753",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#eeeeed", font: "#000", elements: "#53a754" },
+    card: { bg: "#1A65BA", font: "#F2F6FA", elements: "#53A753" },
     font:
       {
-        heading: "#000",
-        inverseHeading: "#0D2C4F",
-        body: "#222",
-        inverseBody: "#ccc",
+        heading: "#0C2542",
+        inverseHeading: "#F2F6FA",
+        body: "#1C3654",
+        inverseBody: "#F2F6FA",
       },
-    button: { bg: "#53a754", text: "#fff" },
-    iconSection: { icon: "#FF766B", bg: "#fafafa" },
-    darkSection: { bg: "#fafafa", button: { bg: "#53a754", text: "#000" } },
+    button: { bg: "#53A753", text: "#fff" },
+    iconSection: { icon: "#53A753", bg: "#F2F6FA" },
+    darkSection: { bg: "#53A753", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
 first:
   {
     title:
-      {
-        firstLine: "Revenue Based Finance",
-        secondLine: "For eCommerce Businesses",
-      },
+      { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
 
     description: "As eCommerce experts, we know that having the capital to pay for inventory, logistics, or marketing is a huge barrier to growth for any brand. Shipmonk Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
 
@@ -85,7 +82,7 @@ fifth:
   {
     title: "What We Do",
     description: "Powered by Outfund, Shipmonk Captial can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Shipmonk Capital offers a new way to help you fund your growing brand.",
+    statement: "Shipmonk Capital offers a new way to help you fund your online brand.",
   }
 
 sixth:
@@ -93,7 +90,7 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products online",
+        "Sell products or services online",
         "Have been trading for 6 months +",
         "Earn $10K+ monthly revenue",
       ],
