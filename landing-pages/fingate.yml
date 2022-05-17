@@ -7,7 +7,7 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "fingate-new"
+partnerLogo: "fingate"
 partnerLogoCard: ""
 
 colors: {
