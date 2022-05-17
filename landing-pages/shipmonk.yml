@@ -11,7 +11,7 @@ partnerLogo: "shipmonk_sized"
 partnerLogoCard: "shipmonk_sized"
 
 colors: {
-    theme: "##eeeeed",
+    theme: "#eeeeed",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
