@@ -74,7 +74,7 @@ third:
 fourth:
   {
     title: "Repay On Your Terms",
-    description: "Repayments are automatically made from a pre-agreed percentage of your revenue, so you can focus 100% on your business.",
+    description: "Repayments are automatically made from a pre-agreed percentage of your revenue so you can focus 100% on your business.",
     button: "Get funded",
   }
 
