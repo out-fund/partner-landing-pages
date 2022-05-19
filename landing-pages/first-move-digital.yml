@@ -1,6 +1,6 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: FMD
+slug: first-move-digital
 
 # Set this to true when you want to publish the page
 published: true
@@ -11,13 +11,13 @@ partnerLogo: "Outfund-dark"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#00A3D7",
+    theme: "#1ABFAF",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#0D2C4F", font: "#F2F6FA", elements: "#00A3D7" },
+    card: { bg: "#1ABFAF", font: "#F2F6FA", elements: "#FFFFFF" },
     font:
       {
         heading: "#0C2542",
@@ -25,9 +25,9 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#00A3D7", text: "#fff" },
-    iconSection: { icon: "#00A3D7", bg: "#F2F6FA" },
-    darkSection: { bg: "#0D2C4F", button: { bg: "#00A3D7", text: "" } },
+    button: { bg: "#1ABFAF", text: "#fff" },
+    iconSection: { icon: "#1ABFAF", bg: "#F2F6FA" },
+    darkSection: { bg: "#1ABFAF", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
@@ -36,7 +36,7 @@ first:
     title:
       { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
-    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Outfund offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As Ecommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. our partnership with Outfund offers a new way to help you fund your online business with funding from $10K to $3M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Outfund can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
-    statement: "Outfund offers a new way to help you fund your online brand.",
+    description: "By partnering with Outfund, we can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
+    statement: "Outfund offers a new way to help you fund your eCommerce brand.",
   }
 
 sixth:
@@ -90,7 +90,7 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products online",
+        "Sell products on online",
         "Have been trading for 6 months +",
         "Earn $10K+ monthly revenue",
       ],
