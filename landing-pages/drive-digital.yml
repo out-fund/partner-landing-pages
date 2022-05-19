@@ -11,13 +11,13 @@ partnerLogo: "drive-digital-logo"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#1A0B28",
+    theme: "#34E19F",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#1A0B28", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#34E19F", font: "#F2F6FA", elements: "#FFFFFF" },
     font:
       {
         heading: "#0C2542",
@@ -25,9 +25,9 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#1A0B28", text: "#fff" },
-    iconSection: { icon: "#1A0B28", bg: "#F2F6FA" },
-    darkSection: { bg: "#1A0B28", button: { bg: "#000000", text: "#FFF" } },
+    button: { bg: "#34E19F", text: "#fff" },
+    iconSection: { icon: "#34E19F", bg: "#F2F6FA" },
+    darkSection: { bg: "#34E19F", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
