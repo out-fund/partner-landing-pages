@@ -160,6 +160,11 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
                       onChange={handleChange}
                     >
                       <option value="Australia">Australia</option>
+                      {slug === "anyday" ? (
+                        <option value="Denmark">Denmark</option>
+                      ) : (
+                        ""
+                      )}
                       <option value="Spain">Spain</option>
                       <option value="UK">United Kingdom</option>
                       <option value="US">United States</option>
