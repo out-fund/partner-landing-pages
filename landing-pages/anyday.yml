@@ -7,8 +7,8 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "anyday2"
-partnerLogoCard: "Outfund-light"
+partnerLogo: "anyday"
+partnerLogoCard: "anyday-card"
 
 colors: {
     theme: "#7C377a",
@@ -17,7 +17,7 @@ colors: {
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#7C377a", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#7C377a", font: "#F2F6FA", elements: "" },
     font:
       {
         heading: "#0C2542",
@@ -34,7 +34,10 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For Online Businesses" },
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For Online Businesses",
+      },
 
     description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Anyday Capital (powered by Outfund) offers a new way to help you fund your online business with funding from €10K to €2M.",
 

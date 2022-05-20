@@ -7,8 +7,10 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "argona-dark"
-partnerLogoCard: "argona-white"
+partnerLogo: "argona"
+partnerLogoCard: "argona-card"
+# Default is 32px
+logoHeight: "40px"
 
 colors: {
     theme: "#0D2C4F",
@@ -23,7 +25,7 @@ colors: {
         heading: "#000",
         inverseHeading: "#000",
         body: "#222",
-        inverseBody: "#ccc",
+        inverseBody: "#555",
       },
     button: { bg: "#547E6F", text: "#fff" },
     iconSection: { icon: "#FF766B", bg: "#fafafa" },
@@ -33,7 +35,11 @@ colors: {
 # Content
 first:
   {
-    title: { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
+    title:
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For eCommerce Businesses",
+      },
 
     description: "As funding experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Argona Partners Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
 

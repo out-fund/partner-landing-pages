@@ -9,6 +9,7 @@ published: True
 # Add the logo to the "companyLogos" folder
 partnerLogo: "Kia-Ora"
 partnerLogoCard: ""
+logoHeight: "64px"
 
 colors: {
     theme: "#005450",

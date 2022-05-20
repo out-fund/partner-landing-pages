@@ -7,17 +7,17 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "fmd-logo"
-partnerLogoCard: "Outfund-light"
+partnerLogo: "fmd"
+partnerLogoCard: "fmd"
 
 colors: {
     theme: "#1ABFAF",
     page: "#fff",
 
-    navbarBg: "", # If nothing present, page color will be used
+    navbarBg: "#000", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#1ABFAF", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#1ABFAF", font: "#F2F6FA", elements: "" },
     font:
       {
         heading: "#0C2542",
@@ -34,7 +34,10 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For eCommerce Businesses",
+      },
 
     description: "As Ecommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. our partnership with Outfund offers a new way to help you fund your online business with funding from $10K to $3M.",
 

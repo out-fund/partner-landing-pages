@@ -21,6 +21,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     slug,
     partnerLogo,
     partnerLogoCard,
+    logoHeight,
     colors,
   } = landingPagesYaml
 
@@ -43,9 +44,11 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     PartnerLogoCard = svgDir(`./${partnerLogoCard}.svg`).default
   }
 
+  const themeObject = { ...colors, logoHeight }
+
   return (
     <>
-      <ThemeProvider theme={colors}>
+      <ThemeProvider theme={themeObject}>
         <Helmet>
           <title>{slug.charAt(0).toUpperCase() + slug.slice(1)}</title>
         </Helmet>
@@ -88,6 +91,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                     )}
 
                     <svg
+                      className="cardSVG"
                       width="337"
                       height="257"
                       fill="none"
@@ -100,8 +104,8 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                         />
                       </g>
                       <path
+                        className="cardBG"
                         d="M30.91 15.757c1.534-8.702 9.832-14.513 18.535-12.979l270.822 47.754c8.702 1.534 14.513 9.833 12.978 18.535l-28.131 159.539c-1.534 8.702-9.833 14.513-18.535 12.978L15.757 193.831c-8.702-1.534-14.513-9.833-12.979-18.535L30.91 15.756Z"
-                        // fill={≈}
                         style={{ fill: colors.card.bg }}
                       />
                       <path
@@ -992,7 +996,8 @@ const Navbar = styled.nav`
     display: flex;
     justify-content: flex-start;
     svg {
-      height: 32px;
+      height: ${(props) =>
+        props.theme.logoHeight ? props.theme.logoHeight : "32px"};
     }
   }
 `
@@ -1010,14 +1015,25 @@ const Header = styled.header`
     .description {
       margin-bottom: 40px;
     }
+    .cardBG {
+      fill: #faf;
+    }
     .card {
       position: relative;
+      /* .cardSVG {
+        filter: drop-shadow(-5px 7px 10px rgba(0, 0, 0, 0.1));
+      } */
+      filter: drop-shadow(-5px 7px 20px rgba(0, 0, 0, 0.05));
+      /* .cardBG {
+        filter: drop-shadow(-5px 7px 10px rgba(0, 0, 0, 0.1));
+      } */
       .partnerLogoCard {
         position: absolute;
         top: 62px;
         left: 50px;
         transform: rotate(10deg);
         max-width: 120px;
+        max-height: 27px;
       }
     }
   }
@@ -1254,6 +1270,7 @@ export const query = graphql`
       id
       partnerLogo
       partnerLogoCard
+      logoHeight
       colors {
         button {
           bg
