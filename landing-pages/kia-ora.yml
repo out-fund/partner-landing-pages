@@ -45,7 +45,7 @@ first:
         secondLine: "",
       },
 
-    description: "With <a href="https://www.kiaoradigital.co.nz/" target="blank">Kia Ora Digital</a> and Outfund's partnership, securing ad spend can be a problem of the past.",
+    description: "With <a href='https://www.kiaoradigital.co.nz/' target="blank">Kia Ora Digital</a> and Outfund's partnership, securing ad spend can be a problem of the past.",
 
     button: "Get funded",
   }
