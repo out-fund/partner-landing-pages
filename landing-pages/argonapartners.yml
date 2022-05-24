@@ -13,7 +13,7 @@ partnerLogoCard: "argona-card"
 logoHeight: "40px"
 
 colors: {
-    theme: "#0D2C4F",
+    theme: "#537E6F",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
