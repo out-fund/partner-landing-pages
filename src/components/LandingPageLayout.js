@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import { Helmet } from "react-helmet"
-
+import { Link, graphql } from "gatsby"
 import styled, {
-  createGlobalStyle,
   ThemeProvider,
+  createGlobalStyle,
   css,
 } from "styled-components"
+
+import { Helmet } from "react-helmet"
+import React from "react"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 
@@ -77,7 +77,7 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
                         </>
                       )}
                     </h1>
-                    <p className="description">{first.description}</p>
+                    <p className="description">{parse(first.description)}</p>
                   </div>
                   <div>
                     <Button to={`/${slug}/get-funded`}>{first.button}</Button>
@@ -959,6 +959,10 @@ const Container = styled.div`
     line-height: 1.5;
     font-weight: 400;
     color: ${(props) => props.theme.font.body};
+  }
+
+  .description a {
+    color: inherit;
   }
 `
 const Wrapper = styled.div.attrs(() => ({
