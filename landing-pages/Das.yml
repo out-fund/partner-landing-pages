@@ -11,13 +11,13 @@ partnerLogo: "Outfund-dark"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#1A65BA",
+    theme: "#DE4827",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#1A65BA", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#DE4827", font: "#F2F6FA", elements: "#FFFFFF" },
     font:
       {
         heading: "#0C2542",
@@ -25,18 +25,18 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#1A65BA", text: "#fff" },
-    iconSection: { icon: "#1A65BA", bg: "#F2F6FA" },
-    darkSection: { bg: "#1A65BA", button: { bg: "#000000", text: "#FFF" } },
+    button: { bg: "#DE4827", text: "#fff" },
+    iconSection: { icon: "#DE4827", bg: "#F2F6FA" },
+    darkSection: { bg: "#DE4827", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
+      { firstLine: "Revenue Based Finance", secondLine: "For Online Businesses" },
 
-    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As growth experts, we know that having the capital to pay for marketing is a huge barrier to growth for any brand. DAS Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, ___ Capital/Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "___ Finance offers a new way to help you fund your ___ brand.",
+    description: "Powered by Outfund, DAS Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "DAS Capital offers a new way to help you fund your online brand.",
   }
 
 sixth:
@@ -90,8 +90,8 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products on ___",
-        "Have been trading for 6 months +",
+        "Sell products online",
+        "Have been incorporated for 6 months+",
         "Earn $10K+ monthly revenue",
       ],
     button: "Get funded",
