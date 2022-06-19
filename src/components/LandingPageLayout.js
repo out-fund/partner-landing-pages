@@ -943,6 +943,9 @@ const Container = styled.div`
     font-weight: 800;
     color: ${(props) => props.theme.font.heading};
     line-height: 1.2;
+    @media (max-width: 680px) {
+      font-size: 2rem;
+    }
   }
   h2 {
     font-size: 2.5rem;
@@ -950,10 +953,16 @@ const Container = styled.div`
     margin-bottom: 8px;
     color: ${(props) => props.theme.font.heading};
     line-height: 1.2;
+    @media (max-width: 680px) {
+      font-size: 1.5rem;
+    }
   }
   h3 {
     color: ${(props) => props.theme.font.heading};
     line-height: 1.2;
+    @media (max-width: 680px) {
+      font-size: 1rem !important;
+    }
   }
   p {
     line-height: 1.5;
@@ -1041,6 +1050,16 @@ const Header = styled.header`
       }
     }
   }
+  @media (max-width: 680px) {
+    .wrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      .card {
+        display: none;
+      }
+    }
+    padding: 20px 0 10px;
+  }
 `
 
 const Benefits = styled.section`
@@ -1058,6 +1077,9 @@ const Benefits = styled.section`
         font-size: 1.5rem;
         font-weight: 600;
       }
+    }
+    @media (max-width: 680px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `
@@ -1100,6 +1122,12 @@ const HowItWorks = styled.section`
         margin-top: 40px;
       }
     }
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 680px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `
 const Repay = styled.section`
@@ -1123,6 +1151,9 @@ const Repay = styled.section`
     }
     .description {
       margin-bottom: 24px;
+    }
+    @media (max-width: 680px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `
@@ -1178,10 +1209,19 @@ const Footer = styled.footer`
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      @media (max-width: 680px) {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+      }
     }
     .right {
       display: flex;
       gap: 48px;
+      @media (max-width: 680px) {
+        flex-direction: column;
+        gap: 24px;
+      }
     }
   }
 `
