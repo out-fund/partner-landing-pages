@@ -7,8 +7,8 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "Outfund-dark"
-partnerLogoCard: "Outfund-light"
+partnerLogo: "Das-logo"
+partnerLogoCard: "Das-logo"
 
 colors: {
     theme: "#DE4827",
