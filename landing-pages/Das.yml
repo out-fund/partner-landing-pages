@@ -9,6 +9,7 @@ published: true
 # Add the logo to the "companyLogos" folder
 partnerLogo: "Das-logo1"
 partnerLogoCard: "Das-logo1"
+logoHeight: "64px"
 
 colors: {
     theme: "#DE4827",
