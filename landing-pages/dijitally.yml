@@ -11,13 +11,13 @@ partnerLogo: "dijitally"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#22D3EE",
+    theme: "#000000",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#22D3EE", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#000000", font: "#F2F6FA", elements: "#FFFFFF" },
     font:
       {
         heading: "#0C2542",
