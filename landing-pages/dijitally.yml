@@ -11,7 +11,7 @@ partnerLogo: "dijitally"
 partnerLogoCard: "Outfund-light"
 
 colors: {
-    theme: "#000000",
+    theme: "#22D3EE",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
@@ -27,7 +27,7 @@ colors: {
       },
     button: { bg: "#22D3EE", text: "#fff" },
     iconSection: { icon: "#22D3EE", bg: "#F2F6FA" },
-    darkSection: { bg: "#22D3EE", button: { bg: "#000000", text: "#FFF" } },
+    darkSection: { bg: "#00000", button: { bg: "#22D3EE", text: "#FFF" } },
   }
 
 # Content
