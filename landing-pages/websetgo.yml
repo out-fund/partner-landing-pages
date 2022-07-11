@@ -8,7 +8,7 @@ published: true
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
 partnerLogo: "websetgo-logo"
-partnerLogoCard: "Outfund-light"
+partnerLogoCard: "outfund-logo-light"
 
 colors: {
     theme: "#53099D",
@@ -34,7 +34,10 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For eCommerce Businesses",
+      },
 
     description: "As Ecommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. our partnership with Outfund offers a new way to help you fund your online business with funding from $10K to $3M.",
 

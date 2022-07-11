@@ -8,7 +8,7 @@ published: true
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
 partnerLogo: "nudge"
-partnerLogoCard: "Outfund-light"
+partnerLogoCard: "outfund-logo-light"
 logoHeight: "64px"
 
 colors: {
@@ -34,11 +34,7 @@ colors: {
 # Content
 first:
   {
-    title:
-      {
-        firstLine: "Revenue Based Finance",
-        secondLine: "For Startups",
-      },
+    title: { firstLine: "Revenue Based Finance", secondLine: "For Startups" },
 
     description: "At The Nudge Group, we work with global start-ups and scale-ups going through various stages of business growth, so we know that having the capital is a huge barrier to growth for any company. Our partnership with Outfund offers a new way to help you fund your business with funding from $10K to $3M.",
 

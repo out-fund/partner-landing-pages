@@ -7,8 +7,8 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "Outfund-dark"
-partnerLogoCard: "Outfund-light"
+partnerLogo: "outfund-logo-dark"
+partnerLogoCard: "outfund-logo-light"
 
 colors: {
     theme: "#1A65BA",
@@ -34,7 +34,10 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For eCommerce & SaaS Businesses" },
+      {
+        firstLine: "Revenue Based Finance",
+        secondLine: "For eCommerce & SaaS Businesses",
+      },
 
     description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Outfund offers a new way to help you fund your online business with funding from $10K to $3M.",
 
