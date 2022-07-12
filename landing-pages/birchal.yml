@@ -18,7 +18,7 @@ colors: {
     headerBg: "#fff",
 
     # Card colors
-    card: { bg: "#1A1ED2", font: "#F2F6FA", elements: "#00A3D7" },
+    card: { bg: "#1A1ED2", font: "#F2F6FA", elements: "" },
     font:
       {
         heading: "#0C2542",
@@ -36,8 +36,8 @@ first:
   {
     title:
       {
-        firstLine: "Not Ready for Equity Crowdfunding? <br/> <br/> Explore Revenue Based Financing",
-        secondLine: "For Growing Businesses",
+        firstLine: "Not Ready for Equity Crowdfunding? <br/><br/> Explore Revenue Based Financing <span style='color: #1A1ED2'>For Growing Businesses</span>",
+        secondLine: "",
       },
 
     description: "At Birchal, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. <br/> <br/> Whether you're looking to boost your equity crowdfunding campaign or not yet ready to go to the crowd, our partners at Outfund can offer a new way to help you fund your online business with funding from $10k to $3M.",
