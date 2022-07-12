@@ -7,7 +7,7 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "verishop1"
+partnerLogo: "verishop-outfund"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
@@ -34,11 +34,11 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For Your Online Business" },
+      { firstLine: "Get the Cash you need to support", secondLine: "Your Growing Online Business" },
 
     description: "We know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Outfund financing offers a new way to help you fund your online business with funding from $10K to $3M.",
 
-    button: "Get funded",
+    button: "Get Started",
   }
 second:
   [
@@ -75,7 +75,7 @@ fourth:
   {
     title: "Repay On Your Terms",
     description: "Repayments are automatically made from a pre-agreed percentage of your revenue, so you can focus 100% on your business.",
-    button: "Get funded",
+    button: "Get Started",
   }
 
 fifth:
@@ -91,8 +91,8 @@ sixth:
     list:
       [
         "Sell products on online",
-        "Have been trading for 6 months +",
+        "Have been selling for +6 months",
         "Earn $10K+ monthly revenue",
       ],
-    button: "Get funded",
+    button: "Get Started",
   }
