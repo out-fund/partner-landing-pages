@@ -14,10 +14,11 @@ colors: {
     theme: "#1A1ED2",
     page: "#fff",
 
-    navbarBg: "", # If nothing present, page color will be used
+    navbarBg: "#fff", # If nothing present, page color will be used
+    headerBg: "#fff",
 
     # Card colors
-    card: { bg: "#1A1ED2", font: "#F2F6FA", elements: "#FFFFFF" },
+    card: { bg: "#1A1ED2", font: "#F2F6FA", elements: "#00A3D7" },
     font:
       {
         heading: "#0C2542",

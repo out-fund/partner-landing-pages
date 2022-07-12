@@ -7,7 +7,6 @@ import styled, {
 
 import { Helmet } from "react-helmet"
 import React from "react"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 
 const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
@@ -24,18 +23,6 @@ const LandingPageLayout = ({ data: { landingPagesYaml } }) => {
     logoHeight,
     colors,
   } = landingPagesYaml
-
-  // console.log(colors.theme)
-
-  // const theme = {
-  //   primary: themeColor,
-  //   heading: fontColor.heading,
-  //   inverseHeading: fontColor.inverseHeading,
-  //   body: fontColor.body,
-  //   inverseBody: fontColor.inverseBody,
-  //   darkBgColor: darkBgColor,
-  //   buttonFontColor: fontColor.button,
-  // }
 
   const svgDir = require.context("!@svgr/webpack!../../images/companyLogos/")
   const PartnerLogo = svgDir(`./${partnerLogo}.svg`).default
@@ -1016,6 +1003,8 @@ const Navbar = styled.nav`
 `
 
 const Header = styled.header`
+  background-color: ${(props) =>
+    props.theme.headerBg ? props.theme.headerBg : props.theme.page};
   padding: 80px 0 120px;
   .wrapper {
     display: grid;
@@ -1346,6 +1335,7 @@ export const query = graphql`
         page
         theme
         navbarBg
+        headerBg
       }
       fifth {
         description
