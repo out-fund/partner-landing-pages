@@ -34,9 +34,9 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Supercharged Funding from $10k to $3M", secondLine: "For Your Inventory & Marketing" },
+      { firstLine: "Supercharged Growth Funding", secondLine: "For Your Online Business" },
 
-    description: "We know that having the funds to pay for inventory and marketing is a huge barrier to growth for any brand. Our partner Outfund offers a new way to help you fund your growing online business, with funding from $10K upto $3M. Get started today and receive a discount exlusive to Verishop sellers. ",
+    description: "We know that having the funds to pay for inventory and marketing can be a huge barrier to growth for any brand. Our partner Outfund offers a new way to help you fund your growing online business, with funding from $10K upto $3M. Get started today and receive a discount exlusive to Verishop sellers. ",
 
     button: "Get Started!",
   }
