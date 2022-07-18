@@ -20,14 +20,14 @@ colors: {
     card: { bg: "#1A65BA", font: "#F2F6FA", elements: "#000000" },
     font:
       {
-        heading: "#0C2542",
+        heading: "#E81E8C",
         inverseHeading: "#F2F6FA",
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#1A65BA", text: "#fff" },
-    iconSection: { icon: "#1A65BA", bg: "#F2F6FA" },
-    darkSection: { bg: "#1A65BA", button: { bg: "#000000", text: "#FFF" } },
+    button: { bg: "#E81E8C", text: "#fff" },
+    iconSection: { icon: "#E81E8C", bg: "#F2F6FA" },
+    darkSection: { bg: "#E81E8C", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
