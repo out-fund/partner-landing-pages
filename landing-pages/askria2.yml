@@ -11,7 +11,7 @@ partnerLogo: "askria1"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#1A65BA",
+    theme: "#E81E8C",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
