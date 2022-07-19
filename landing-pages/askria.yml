@@ -36,7 +36,7 @@ first:
     title:
       {
         firstLine: "Revenue Based Finance",
-        secondLine: "For eCommerce & Saas Businesses",
+        secondLine: "For Saas, B2B, & eCommerce",
       },
 
     description: "As financing experts, we know that having the capital to excecute growth plans can be a huge barrier to growth for any company. Outfund offers a new way to help you fund your online business with funding from $10K to $10M.",
@@ -84,7 +84,7 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "POutfund can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
+    description: "Outfund can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantee.",
     statement: "Outfund  offers a new way to help you fund your online brand.",
   }
 
