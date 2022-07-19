@@ -20,13 +20,13 @@ colors: {
     card: { bg: "#000000", font: "#F2F6FA", elements: "#2A9EDB" },
     font:
       {
-        heading: "#2A9EDB",
+        heading: "#000000",
         inverseHeading: "#F2F6FA",
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
     button: { bg: "#2A9EDB", text: "#fff" },
-    iconSection: { icon: "#1A65BA", bg: "#F2F6FA" },
+    iconSection: { icon: "#2A9EDB", bg: "#F2F6FA" },
     darkSection: { bg: "#2A9EDB", button: { bg: "#000000", text: "#FFF" } },
   }
 
