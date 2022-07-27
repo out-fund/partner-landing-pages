@@ -38,7 +38,7 @@ first:
         secondLine: "For eCommerce Businesses",
       },
 
-    description: "As accounting experts, we know that having the capital to pay for things like inventory and marketing is a huge barrier to growth for any brand. Outfund offers a new way to help you fund your online business with funding from $10K to $10M.",
+    description: "As accounting experts, we know that having the capital to pay for things like inventory and marketing is a huge barrier to growth for any brand. We're offering a new way to help you fund your online business with funding from $10K to $10M.",
 
     button: "Get funded",
   }
@@ -83,8 +83,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Outfund can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "Outfund offers a new way to help you fund your online brand.",
+    description: "Calculate can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "Calculate offers a new way to help you fund your online brand.",
   }
 
 sixth:
