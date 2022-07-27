@@ -34,9 +34,9 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
+      { firstLine: "Revenue Based Finance", secondLine: "For growing eCommerce Businesses" },
 
-    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As growth experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Foresight Finance (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $10M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, ___ Capital/Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "___ Finance offers a new way to help you fund your ___ brand.",
+    description: "Powered by Outfund, Foresight Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "Foresight Finance offers a new way to help you fund your eCommerce brand.",
   }
 
 sixth:
@@ -92,7 +92,7 @@ sixth:
       [
         "Sell products online",
         "Have been trading for 6 months +",
-        "Earn $10K+ monthly revenue",
+        "Earn $20K+ monthly revenue",
       ],
     button: "Get funded",
   }
