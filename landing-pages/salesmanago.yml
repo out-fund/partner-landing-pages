@@ -11,13 +11,13 @@ partnerLogo: "salesmanago"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#1B64BA",
+    theme: "#273A4B",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#000000", font: "#FFF", elements: "#1A65BA" },
+    card: { bg: "#000000", font: "#FFF", elements: "#273A4B" },
     font:
       {
         heading: "#0C2542",
@@ -25,9 +25,9 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#1A65BA", text: "#fff" },
-    iconSection: { icon: "#1A65BA", bg: "#F2F6FA" },
-    darkSection: { bg: "#1A65BA", button: { bg: "#000000", text: "#FFF" } },
+    button: { bg: "#273A4B", text: "#fff" },
+    iconSection: { icon: "#273A4B", bg: "#F2F6FA" },
+    darkSection: { bg: "#273A4B", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
