@@ -11,7 +11,7 @@ partnerLogo: "chicmixoutfund1"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#1A65BA",
+    theme: "#FA8C26",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
