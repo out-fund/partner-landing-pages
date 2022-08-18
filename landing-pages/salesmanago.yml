@@ -11,7 +11,7 @@ partnerLogo: "salesmanago"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#CBDDA4",
+    theme: "#1B64BA",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
