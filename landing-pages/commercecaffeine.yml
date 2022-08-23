@@ -8,7 +8,7 @@ published: true
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
 partnerLogo: "commercecaffeine"
-partnerLogoCard: "outfund-logo-dark"
+partnerLogoCard: "outfund-logo-light"
 
 colors: {
     theme: "#7666D5",
@@ -17,7 +17,7 @@ colors: {
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#CCBCF9", font: "#000", elements: "#7666D5" },
+    card: { bg: "#000000", font: "#FFF", elements: "#7666D5" },
     font:
       {
         heading: "#0C2542",
