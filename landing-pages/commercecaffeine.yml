@@ -36,7 +36,7 @@ first:
     title:
       { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
-    description: "As eCommerce experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Zendrop Capital offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As eCommerce experts, we know that having the funds to stay in stock and market your product is a huge barrier to growth for any brand. Commerce Caffeine Capital offers a new way to help you fund your online business with funding from $10K to $10M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, Zendrop Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue-based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "Zendrop Capital offers a new way to help you fund your online business.",
+    description: "Commerce Caffeine Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue-based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "Commerce Caffeine Capital offers a new way to help you fund your online business.",
   }
 
 sixth:
@@ -90,7 +90,7 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products online",
+        "Sell products or services online",
         "Have been trading for 6 months+",
         "Earn $10K+ monthly revenue",
       ],
