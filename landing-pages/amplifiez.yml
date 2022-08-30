@@ -11,10 +11,10 @@ partnerLogo: "amplifiez"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#1A65BA",
+    theme: "#761CC3",
     page: "#fff",
 
-    navbarBg: "", # If nothing present, page color will be used
+    navbarBg: "#761CC3", # If nothing present, page color will be used
 
     # Card colors
     card: { bg: "#1A65BA", font: "#F2F6FA", elements: "" },
