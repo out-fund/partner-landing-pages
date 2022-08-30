@@ -27,7 +27,7 @@ colors: {
       },
     button: { bg: "#F97C60", text: "#fff" },
     iconSection: { icon: "#761CC3", bg: "#F2F6FA" },
-    darkSection: { bg: "#761CC3", button: { bg: "#000000", text: "#FFF" } },
+    darkSection: { bg: "#761CC3", button: { bg: "#F97C60", text: "#FFF" } },
   }
 
 # Content
