@@ -26,8 +26,8 @@ colors: {
         inverseBody: "#F2F6FA",
       },
     button: { bg: "#9E3FFD", text: "#fff" },
-    iconSection: { icon: "#9E3FFD", bg: "#F2F6FA" },
-    darkSection: { bg: "#2A9EDB", button: { bg: "#9E3FFD", text: "#FFF" } },
+    iconSection: { icon: "#000000", bg: "#F2F6FA" },
+    darkSection: { bg: "#9E3FFD", button: { bg: "#000000", text: "#FFF" } },
   }
 
 # Content
@@ -82,7 +82,7 @@ fifth:
   {
     title: "What We Do",
     description: "Powered by Outfund, Actio Group Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "Raincatcher Capital offers a new way to help you fund your online brand.",
+    statement: "Actio Group Capital offers a new way to help you fund your online brand.",
   }
 
 sixth:
