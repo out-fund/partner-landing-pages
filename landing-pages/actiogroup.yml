@@ -11,7 +11,7 @@ partnerLogo: "actio-long"
 partnerLogoCard: "actio-long"
 
 colors: {
-    theme: "#FAFAFA",
+    theme: "#9E3FFD",
     page: "#fff",
 
     navbarBg: "#000000", # If nothing present, page color will be used
@@ -25,9 +25,9 @@ colors: {
         body: "#1C3654",
         inverseBody: "#F2F6FA",
       },
-    button: { bg: "#2A9EDB", text: "#fff" },
-    iconSection: { icon: "#2A9EDB", bg: "#F2F6FA" },
-    darkSection: { bg: "#2A9EDB", button: { bg: "#000000", text: "#FFF" } },
+    button: { bg: "#9E3FFD", text: "#fff" },
+    iconSection: { icon: "#9E3FFD", bg: "#F2F6FA" },
+    darkSection: { bg: "#2A9EDB", button: { bg: "#9E3FFD", text: "#FFF" } },
   }
 
 # Content
