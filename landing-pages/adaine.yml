@@ -11,13 +11,13 @@ partnerLogo: "adaine2"
 partnerLogoCard: "adaine1"
 
 colors: {
-    theme: "#1A65BA",
+    theme: "#CE20FF",
     page: "#fff",
 
-    navbarBg: "", # If nothing present, page color will be used
+    navbarBg: "#000000", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#1A65BA", font: "#F2F6FA", elements: "" },
+    card: { bg: "#000000", font: "#F2F6FA", elements: "CE20FF" },
     font:
       {
         heading: "#0C2542",
