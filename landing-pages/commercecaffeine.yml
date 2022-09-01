@@ -33,9 +33,9 @@ colors: {
 first:
   {
     title:
-      { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
+      { firstLine: "Revenue Based Finance", secondLine: "For eCommerce Businesses" },
 
-    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Outfund offers a new way to help you fund your online business with funding from $10K to $310.",
 
     button: "Get funded",
   }
@@ -80,8 +80,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, ___ Capital/Finance can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "___ Finance offers a new way to help you fund your ___ brand.",
+    description: "Outfund can help your business  achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "Outfund offers a new way to help you fund your online brand.",
   }
 
 sixth:
@@ -89,7 +89,7 @@ sixth:
     title: "We fund online businesses who:",
     list:
       [
-        "Sell products on ___",
+        "Sell products or services online",
         "Have been trading for 6 months +",
         "Earn $10K+ monthly revenue",
       ],
