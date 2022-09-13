@@ -20,14 +20,14 @@ colors: {
     card: { bg: "#000000", font: "#F2F6FA", elements: "#FE9A01" },
     font:
       {
-        heading: "#FE9A01",
+        heading: "#000000",
         inverseHeading: "#000000",
         body: "#1C3654",
         inverseBody: "#000000",
       },
     button: { bg: "#FE9A01", text: "#000000" },
-    iconSection: { icon: "#FE9A01", bg: "#000000" },
-    darkSection: { bg: "#FE9A01", button: { bg: "#000000", text: "#FE9A01" } },
+    iconSection: { icon: "#000000", bg: "#FE9A01" },
+    darkSection: { bg: "#000000", button: { bg: "#FE9A01", text: "#000000" } },
   }
 
 # Content
