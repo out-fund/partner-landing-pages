@@ -22,7 +22,7 @@ colors: {
       {
         heading: "#0C2542",
         inverseHeading: "#F2F6FA",
-        body: "#1C3654",
+        body: "#FE9A01",
         inverseBody: "#F2F6FA",
       },
     button: { bg: "#000000", text: "#FE9A01" },
