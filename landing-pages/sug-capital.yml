@@ -23,11 +23,11 @@ colors: {
         heading: "#FE9A01",
         inverseHeading: "#000000",
         body: "#1C3654",
-        inverseBody: "#FE9A01",
+        inverseBody: "#000000",
       },
     button: { bg: "#FE9A01", text: "#000000" },
     iconSection: { icon: "#FE9A01", bg: "#000000" },
-    darkSection: { bg: "#FE9A01", button: { bg: "#000000", text: "#FFF" } },
+    darkSection: { bg: "#FE9A01", button: { bg: "#000000", text: "#FE9A01" } },
   }
 
 # Content
