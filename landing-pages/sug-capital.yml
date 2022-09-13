@@ -21,7 +21,7 @@ colors: {
     font:
       {
         heading: "#FE9A01",
-        inverseHeading: "#F2F6FA",
+        inverseHeading: "#000000",
         body: "#1C3654",
         inverseBody: "#FE9A01",
       },
