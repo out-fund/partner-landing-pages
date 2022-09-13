@@ -1,6 +1,6 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: sup
+slug: sug
 
 # Set this to true when you want to publish the page
 published: true
@@ -36,7 +36,7 @@ first:
     title:
       { firstLine: "Revenue Based Finance", secondLine: "For Amazon Businesses" },
 
-    description: "As growth experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. SUP Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $10M.",
+    description: "As growth experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. SUG Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $10M.",
 
     button: "Get funded",
   }
@@ -81,8 +81,8 @@ fourth:
 fifth:
   {
     title: "What We Do",
-    description: "Powered by Outfund, SUP Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
-    statement: "SUP Capital offers a new way to help you fund your Amazon business.",
+    description: "Powered by Outfund, SUG Capital can help your business to achieve its growth potential. Don’t be held back by limited inventory, or a small marketing budget. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "SUG Capital offers a new way to help you fund your Amazon business.",
   }
 
 sixth:
