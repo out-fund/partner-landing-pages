@@ -11,7 +11,7 @@ partnerLogo: "sug2"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#000000",
+    theme: "#FE9A01",
     page: "#fff",
 
     navbarBg: "#FE9A01", # If nothing present, page color will be used
