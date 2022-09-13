@@ -21,8 +21,8 @@ colors: {
     font:
       {
         heading: "#0C2542",
-        inverseHeading: "#F2F6FA",
-        body: "#FE9A01",
+        inverseHeading: "#FE9A01",
+        body: "#000000",
         inverseBody: "#F2F6FA",
       },
     button: { bg: "#000000", text: "#FE9A01" },
