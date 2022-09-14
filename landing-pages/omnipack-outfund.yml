@@ -20,7 +20,7 @@ colors: {
     card: { bg: "#111335", font: "#F2F6FA", elements: "#E53B46" },
     font:
       {
-        heading: "#0C2542",
+        heading: "#E53B46",
         inverseHeading: "#F2F6FA",
         body: "#1C3654",
         inverseBody: "#F2F6FA",
