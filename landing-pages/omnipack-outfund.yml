@@ -11,7 +11,7 @@ partnerLogo: "outfund-logo-dark"
 partnerLogoCard: "outfund-logo-light"
 
 colors: {
-    theme: "#111335",
+    theme: "#E53B46",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
@@ -20,7 +20,7 @@ colors: {
     card: { bg: "#111335", font: "#F2F6FA", elements: "#E53B46" },
     font:
       {
-        heading: "#E53B46",
+        heading: "#111335",
         inverseHeading: "#F2F6FA",
         body: "#1C3654",
         inverseBody: "#F2F6FA",
