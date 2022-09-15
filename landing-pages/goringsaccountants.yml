@@ -17,7 +17,7 @@ colors: {
     navbarBg: "", # If nothing present, page color will be used
 
     # Card colors
-    card: { bg: "#1A65BA", font: "#F2F6FA", elements: "" },
+    card: { bg: "#1A65BA", font: "#F2F6FA", elements: "#000000" },
     font:
       {
         heading: "#0C2542",
@@ -39,7 +39,7 @@ first:
         secondLine: "For eCommerce & B2B Businesses",
       },
 
-    description: "As accounting experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Our partner, Outfund, offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As accounting experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Our partner, Outfund, offers a new way to help you fund your online business with funding from £10K to £10M.",
 
     button: "Get funded",
   }
@@ -95,7 +95,7 @@ sixth:
       [
         "Sell products or services online",
         "Have been trading for 6 months +",
-        "Earn $10K+ monthly revenue",
+        "Earn £10K+ monthly revenue",
       ],
     button: "Get funded",
   }
