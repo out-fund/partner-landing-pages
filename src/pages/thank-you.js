@@ -32,7 +32,8 @@ const ThankYou = ({ location }) => {
         Thank you for your application
       </h1>
       <Button
-        href={vars.url}
+        // href={vars.url}
+        href="https://client.out.fund/signup"
         style={{
           color: vars.fontColor.button,
           backgroundColor: vars.themeColor,
