@@ -40,7 +40,8 @@ first:
         secondLine: "For Your Online Business",
       },
 
-    description: "As eCommerce experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. Outfund offers a new way to help you fund your online business with funding from £10K to £10M.",
+    description: "FINTECH Circle and OutFund are excited to work together to help the best fintech startups and scaleups get access to growth capital. While FINTECH Circle's angel network provides early-stage startup capital in the form of equity investments, OutFund provides revenue based financing. This means that Outfund uses your monthly revenue as a guide and provides up-front capital within 24 hours in exchange for a small percentage of future earnings. As a startup you repay OutFund as sales come. 
+",
 
     button: "Get funded",
   }
@@ -91,12 +92,12 @@ fifth:
 
 sixth:
   {
-    title: "We fund online businesses who:",
+    title: "We fund businesses who:",
     list:
       [
-        "Sell products or services online",
+        "",
         "Have been trading for 6 months +",
-        "Earn $10K+ monthly revenue",
+        "Earn £10K+ monthly revenue",
       ],
     button: "Get funded",
   }
