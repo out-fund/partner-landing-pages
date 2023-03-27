@@ -1,14 +1,14 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: payfit.yml
+slug: payfit
 
 # Set this to true when you want to publish the page
 published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: ""
-partnerLogoCard: ""
+partnerLogo: "outfund-logo-dark"
+partnerLogoCard: "outfund-logo-dark"
 logoHeight: "64px"
 
 colors: {
@@ -35,13 +35,11 @@ colors: {
 first:
   {
     title:
-      {
-        firstLine: "Revenue Based Finance",
-        secondLine: "For Your Business",
-      },
+      { firstLine: "Revenue Based Finance", secondLine: "For Your Business" },
 
-    description: "FINTECH Circle and OutFund are excited to work together to help the best fintech startups and scaleups get access to growth capital. While FINTECH Circle's angel network provides early-stage startup capital in the form of equity investments, OutFund provides revenue based financing. 
-",
+    description:
+      "FINTECH Circle and OutFund are excited to work together to help the best fintech startups and scaleups get access to growth capital. While FINTECH Circle's angel network provides early-stage startup capital in the form of equity investments, OutFund provides revenue based financing.
+      ",
 
     button: "Get funded",
   }
@@ -94,10 +92,6 @@ sixth:
   {
     title: "We fund businesses who:",
     list:
-      [
-        "",
-        "Have been trading for 6 months +",
-        "Earn £10K+ monthly revenue",
-      ],
+      ["", "Have been trading for 6 months +", "Earn £10K+ monthly revenue"],
     button: "Get funded",
   }
