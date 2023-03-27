@@ -36,7 +36,7 @@ first:
     title:
       { firstLine: "Revenue Based Finance", secondLine: "For ___ Businesses" },
 
-    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from $10K to $3M.",
+    description: "As ___ experts, we know that having the capital to pay for inventory and marketing is a huge barrier to growth for any brand. ___ Capital (powered by Outfund) offers a new way to help you fund your online business with funding from £10K to £10M.",
 
     button: "Get funded",
   }
@@ -92,7 +92,7 @@ sixth:
       [
         "Sell products on ___",
         "Have been trading for 6 months +",
-        "Earn $10K+ monthly revenue",
+        "Earn £10K+ monthly revenue",
       ],
     button: "Get funded",
   }
