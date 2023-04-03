@@ -82,3 +82,21 @@ fourth:
     description: "Repayments are automatically made from a pre-agreed percentage of your revenue, so you can focus 100% on your business.",
     button: "Get funded",
   }
+fifth:
+  {
+    title: "What We Do",
+    description: "Outfund can help your business to achieve its growth potential. Revenue based financing is a fast, flexible and fair way to supercharge your growth, without giving up equity and with no personal guarantees required.",
+    statement: "",
+  }
+
+sixth:
+  {
+    title: "We fund businesses who:",
+    list:
+      [
+        "",
+        "Have been trading for 6 months +",
+        "Earn £10K+ monthly revenue",
+      ],
+    button: "Get funded",
+  }
