@@ -12,7 +12,7 @@ partnerLogoCard: "IS Full Logo White"
 logoHeight: "64px"
 
 colors: {
-    theme: "#2E8DE4",
+    theme: "#000000",
     page: "#fff",
 
     navbarBg: "", # If nothing present, page color will be used
@@ -21,7 +21,7 @@ colors: {
     card: { bg: "#000000", font: "#F2F6FA", elements: "#000000" },
     font:
       {
-        heading: "#0C2542",
+        heading: "#000000",
         inverseHeading: "#F2F6FA",
         body: "#1C3654",
         inverseBody: "#F2F6FA",
