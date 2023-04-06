@@ -7,8 +7,8 @@ published: true
 
 # Partner logo in SVG format, please just add the naem not the ".svg" file extension
 # Add the logo to the "companyLogos" folder
-partnerLogo: "outfund-logo-dark"
-partnerLogoCard: "outfund-logo-dark"
+partnerLogo: "outfund-logo-light"
+partnerLogoCard: "outfund-logo-light"
 logoHeight: "64px"
 
 colors: {
@@ -38,7 +38,7 @@ first:
       { firstLine: "Revenue Based Finance", secondLine: "For Your Business" },
 
     description:
-      "FINTECH Circle and OutFund are excited to work together to help the best fintech startups and scaleups get access to growth capital. While FINTECH Circle's angel network provides early-stage startup capital in the form of equity investments, OutFund provides revenue based financing.
+      "Outfund provide fast and flexible funding from £10k-£10m to allow you to scale without giving away equity.
       ",
 
     button: "Get funded",
