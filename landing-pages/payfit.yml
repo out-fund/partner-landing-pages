@@ -1,6 +1,6 @@
 # Slug value will be used for URL, eg: www.revenue.finance/template
 # As a convention, name the file the same as the slug, eg: template.yml
-slug: 7figures
+slug: payfit
 
 # Set this to true when you want to publish the page
 published: true
