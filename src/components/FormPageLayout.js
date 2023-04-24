@@ -34,22 +34,22 @@ const FormPageLayout = ({ data: { landingPagesYaml } }) => {
 
     switch (state.country) {
       case "UK":
-        navigateToUrl = "https://app.out.fund/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
         break
       case "Spain":
-        navigateToUrl = "https://app.out.fund/esp/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
         break
       case "US":
-        navigateToUrl = "https://app.out.fund/usa/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
         break
       case "Australia":
-        navigateToUrl = "https://app.out.fund/aus/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
         break
       case "Other":
-        navigateToUrl = "https://app.out.fund/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
         break
       default:
-        navigateToUrl = "https://app.out.fund/enquire"
+        navigateToUrl = "https://client.out.fund/signup"
     }
 
     console.log(state)
